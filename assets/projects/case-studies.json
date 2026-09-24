@@ -1,0 +1,334 @@
+{
+  "planning": {
+    "category": "01 / NEXUS TERMINAL · PRE-CONSTRUCTION STUDY",
+    "title": "Before the first brick.",
+    "intro": "Nexus Terminal — a multi-level metro station study on Avenida da Boavista, Porto, Portugal.",
+    "sections": [
+      [
+        "The problem",
+        "The feasibility study examines gaps in public transport, reliance on private vehicles, transfer congestion, and pedestrian access along the Boavista corridor."
+      ],
+      [
+        "My contribution",
+        "Six months of pre-construction work covered architectural, structural, and MEP coordination using BIM and Navisworks; Primavera P6 schedules supported 4D sequencing. Model-based takeoffs and Bluebeam validation informed cost planning."
+      ],
+      [
+        "Estimation",
+        "The documented workflow moves from a conceptual estimate using gross area and RSMeans to drawing-based quantities, a design-development baseline, and a CSI MasterFormat breakdown. The portfolio lists a total estimated project cost of $60,082,987; this is a study estimate, not a delivered contract value."
+      ],
+      [
+        "Scheduling & risk",
+        "The source programme contains approximately 300 activities, about 100 identified as critical, and a 530-day duration. Its risk discussion covers imported curtain-wall procurement and weather-sensitive excavation. The summary and schedule show different finish dates, so no single completion date is asserted here."
+      ],
+      [
+        "Design & environmental response",
+        "The proposal connects a high-capacity transit hub with its urban context. The feasibility study identifies walkability, cycling, public transport access, and green corridors as intended benefits; these are design intentions rather than measured outcomes."
+      ],
+      [
+        "Deliverables & outcome",
+        "A feasibility study, coordinated model views, plans and sections, a detailed estimate, a Primavera P6 programme, and critical-path documentation make the relationship between scope, cost, and time reviewable. The portfolio records a 260,000 sq. ft. gross built-up area and design-build delivery strategy."
+      ]
+    ],
+    "gallery": [
+      [
+        "06",
+        "Project overview, plans, section and study parameters"
+      ],
+      [
+        "07",
+        "Feasibility study and transit context"
+      ],
+      [
+        "08",
+        "Cost estimate, trade breakdown and model view"
+      ],
+      [
+        "09",
+        "Primavera P6 programme and risk discussion"
+      ],
+      [
+        "10",
+        "Critical-path activities and model views"
+      ]
+    ],
+    "source": "Source: portfolio pages 6–10. Presented as a pre-construction study; project year and academic affiliation are not explicitly stated. Study parameters are not claims of construction completion.",
+    "visualGallery": [
+      [
+        "nexus-exterior-hq",
+        "Building exterior from the Nexus Terminal portfolio · p. 6"
+      ],
+      [
+        "nexus-model",
+        "Coordinated station model · p. 10"
+      ],
+      [
+        "nexus-model-reverse",
+        "Station model, reverse view · p. 10"
+      ],
+      [
+        "nexus",
+        "Terminal roof and plan view · p. 6"
+      ],
+      [
+        "nexus-section",
+        "Architectural section · p. 6"
+      ]
+    ]
+  },
+  "architecture": {
+    "category": "02 / SHINDE DENTAL & EYE CARE · YELAHANKA",
+    "title": "Clinical clarity. Human warmth.",
+    "intro": "A 4,000 sq. ft. eye and dental healthcare center balancing clinical function, retail, and patient comfort.",
+    "sections": [
+      [
+        "The problem",
+        "Bring clinical services, an eyewear retail zone, circulation, and a children's play area into one coherent healthcare environment."
+      ],
+      [
+        "The design response",
+        "Clear zoning and circulation organize the patient journey. A restrained, warm material palette supports an approachable setting while maintaining the clarity required by clinical spaces."
+      ],
+      [
+        "My role",
+        "Led design development from concept through pre-construction coordination, working with the principal architect, clients, and consultants. Developed presentation sets and coordinated design iterations and permit support."
+      ],
+      [
+        "Technical & project controls",
+        "Coordinated medical-equipment zoning with architectural, MEP, and HVAC requirements. Prepared BOQs, bid packages, and cost analyses; managed 15+ vendors and suppliers and tracked RFIs, submittals, and QA/QC documentation."
+      ],
+      [
+        "Delivery & outcome",
+        "The portfolio describes design-bid-build delivery and a functional, patient-focused environment. The source drawings and images show the relationship between clinical areas, reception, retail displays, and material choices."
+      ],
+      [
+        "Context",
+        "Professional healthcare and commercial-interior work in Yelahanka, Bangalore. A project-specific completion date and software list are not given in the project pages."
+      ]
+    ],
+    "gallery": [
+      [
+        "28",
+        "Project introduction and interior view"
+      ],
+      [
+        "29",
+        "Plan, design strategy, role and coordination"
+      ],
+      [
+        "30",
+        "Interior views and material expression"
+      ]
+    ],
+    "source": "Source: portfolio pages 28–30; related healthcare responsibilities appear in the experience record on page 4."
+  },
+  "resilience": {
+    "category": "03 / WINDMERE VALLEY RESORT · YERCAUD",
+    "title": "A dialogue with the valley.",
+    "intro": "A boutique hospitality resort on approximately two acres in the hill station of Yercaud, Tamil Nadu.",
+    "sections": [
+      [
+        "The context",
+        "The portfolio places the site along an elevated cliff edge, with panoramic valley views and sunset-facing orientations."
+      ],
+      [
+        "The architectural response",
+        "Guest spaces and hospitality interiors establish a visual relationship with the surrounding landscape. The presented views emphasize timber, woven textures, planting, and open connections to the valley."
+      ],
+      [
+        "Process & documentation",
+        "The portfolio includes architectural plans and a sequence of guest-room, restaurant, and public-space views. The resume describes assisting a principal architect on a two-acre boutique resort, including drawings, FF&E layouts, and interior elevations."
+      ],
+      [
+        "Delivery & evidence",
+        "The project sheet lists design-bid-build as the delivery method. A completion date, measured environmental performance, and a project-specific software list are not stated; the images document the design presentation."
+      ]
+    ],
+    "gallery": [
+      [
+        "31",
+        "Resort setting and project overview"
+      ],
+      [
+        "32",
+        "Architectural plans and interior documentation"
+      ],
+      [
+        "33",
+        "Hospitality spaces and landscape relationships"
+      ]
+    ],
+    "source": "Source: portfolio pages 31–33 and related hospitality experience on page 4. The source heading spells the location ‘Yercud’; body text identifies Yercaud."
+  },
+  "miami": {
+    "category": "04 / MIAMI TOWER · PRE-CONSTRUCTION STUDY",
+    "title": "Plan the complexity.",
+    "intro": "Bank and Office Tower, Miami, Florida — site logistics, quantity takeoff, cost estimation, and scheduling for a proposed development.",
+    "sections": [
+      [
+        "My contribution",
+        "The stated role covers site logistics coordination, quantity takeoffs, cost estimation, and construction scheduling across the pre-construction and planning phases."
+      ],
+      [
+        "Site strategy",
+        "The logistics plan places a luffing-jib tower crane, two material-storage zones, temporary worker facilities, and clearly identified entry and exit points within a constrained development site."
+      ],
+      [
+        "Cost & time",
+        "The source summary lists a $147,387,115 project estimate, 714-day programme, and design-bid-build strategy. These are proposed study parameters, not the value or duration of a completed commission."
+      ],
+      [
+        "The deliverables",
+        "Architectural plans, site logistics, staffing and cost sheets, and schedule extracts connect the tower proposal to a delivery strategy. The source estimate contains illustrative personnel names, so it is treated as a planning exercise rather than an actual staffing record."
+      ]
+    ],
+    "gallery": [
+      [
+        "11",
+        "Tower proposal and architectural plans"
+      ],
+      [
+        "12",
+        "Site logistics and illustrative estimating sheet"
+      ],
+      [
+        "13",
+        "Estimate continuation"
+      ],
+      [
+        "14",
+        "Schedule extract"
+      ],
+      [
+        "15",
+        "Schedule and critical activities"
+      ]
+    ],
+    "source": "Source: portfolio pages 11–15. No completed-project or independent LEED-certification claim is made."
+  },
+  "controls": {
+    "category": "05 / PRIMAVERA P6 · PROJECT CONTROLS",
+    "title": "Make performance legible.",
+    "intro": "A reporting archive that links the baseline programme to resources, expenditure, risk, and earned value.",
+    "sections": [
+      [
+        "The baseline",
+        "The report presents a 224-day construction plan with preparation, construction blocks A–C, and final phases. Its stated budget is approximately $1.21 million; these figures describe the source analysis, not a newly verified live project."
+      ],
+      [
+        "The process",
+        "WBS structuring, activity sequencing, resource and cost loading, and baseline comparisons connect the Gantt programme to time-phased labor, materials, and equipment."
+      ],
+      [
+        "Reporting",
+        "The archive includes workload analysis, resource assignments, monthly cost reports, cumulative labor curves, a risk register, earned-value dashboards, and schedule-check outputs."
+      ],
+      [
+        "What the analysis surfaces",
+        "The source discusses resource over-allocation, early cost overruns, and performance deviations in its examples. These provide a basis for identifying where planning and corrective action are needed; no unsupported savings or delivery improvement is claimed."
+      ]
+    ],
+    "gallery": [
+      [
+        "16",
+        "Baseline construction programme"
+      ],
+      [
+        "17",
+        "Workload analysis, resource and cost loading"
+      ],
+      [
+        "18",
+        "Reporting, labor curves and performance analysis"
+      ],
+      [
+        "19",
+        "Risk and earned-value analysis"
+      ],
+      [
+        "20",
+        "Schedule-check report"
+      ],
+      [
+        "21",
+        "Schedule-check continuation"
+      ]
+    ],
+    "source": "Source: portfolio pages 16–21. Analysis dates and reported values are preserved in the source images; they are not presented as current project status."
+  },
+  "sports": {
+    "category": "06 / ARCHITECTURE THESIS · BANGALORE",
+    "title": "A spine for collective activity.",
+    "intro": "Multipurpose Sports Complex — an architectural thesis connecting sports, training, recreation, and public space.",
+    "sections": [
+      [
+        "The problem",
+        "The thesis addresses a need for sporting infrastructure and public access to facilities in Bangalore, with indoor sports, an aquatic complex, training, and supporting uses."
+      ],
+      [
+        "The concept",
+        "The human spine becomes a planning analogy: a connecting circulation system links distinct facilities into one composition. Public and service areas sit closer to access roads; curved pathways and organic massing respond to the landscape."
+      ],
+      [
+        "Technical development",
+        "The portfolio documents a 28-acre site, an indoor stadium and training center, a swimming complex, and an administration block. Plans, column layouts, sections, and an exploded structural diagram explain the spatial and structural organization."
+      ],
+      [
+        "The outcome",
+        "A thesis proposal developed through site analysis, concept sketches, massing studies, plans, sections, and visualizations. Environmental thinking is expressed through landscape integration and orientation; measured performance and built completion are not claimed."
+      ]
+    ],
+    "gallery": [
+      [
+        "23",
+        "Thesis aims, scope and primary visualization"
+      ],
+      [
+        "24",
+        "Site analysis"
+      ],
+      [
+        "25",
+        "Spine concept and massing development"
+      ],
+      [
+        "26",
+        "Plans, sections, structural diagrams and views"
+      ]
+    ],
+    "source": "Source: portfolio pages 23–26. Academic thesis; project-specific year and software are not stated."
+  },
+  "motorcycle": {
+    "category": "07 / MOTORCYCLE SERVICE FACILITY · AARDE",
+    "title": "From shell to working system.",
+    "intro": "A 24,300 sq. ft. commercial service facility integrating a workshop, retail and café areas, and offices.",
+    "sections": [
+      [
+        "The challenge",
+        "Transform a bare shell into a coordinated service environment, balancing workshop operations, customer circulation, equipment requirements, and public-facing spaces."
+      ],
+      [
+        "My role",
+        "Led pre-construction, coordination, procurement, and execution across design-build delivery. Collaborated with architectural, structural, and MEP teams and managed contractors, vendors, and suppliers."
+      ],
+      [
+        "Technical response",
+        "Integrated OEM equipment with building services and layout constraints, developed shop drawings and technical layouts, and resolved site coordination issues through stakeholder alignment."
+      ],
+      [
+        "Delivery & outcome",
+        "The source records a $2.6 million budget and delivery within budget and ahead of schedule. Its resume and case study give different day counts, so the website intentionally omits a numerical early-completion claim."
+      ]
+    ],
+    "gallery": [
+      [
+        "34",
+        "Project overview and interior visualization"
+      ],
+      [
+        "35",
+        "Role, technical scope, model views and delivery"
+      ]
+    ],
+    "source": "Source: portfolio pages 34–35 and experience on page 4. Project dates are not separately stated."
+  }
+}
