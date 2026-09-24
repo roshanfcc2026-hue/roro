@@ -1,0 +1,36 @@
+{
+  "video": {
+    "width": 1920,
+    "height": 800,
+    "duration": 4.74935,
+    "playing": true,
+    "muted": true,
+    "loop": true,
+    "fit": "contain"
+  },
+  "widths": [
+    {
+      "width": 320,
+      "overflow": false,
+      "videoRatio": 2.424332746240347
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "videoRatio": 2.4200376814806606
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "videoRatio": 2.4127542760610967
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "videoRatio": 2.4072164948453607
+    }
+  ],
+  "pauseWorks": true,
+  "reducedMotionPaused": true,
+  "errors": []
+}

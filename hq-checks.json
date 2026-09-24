@@ -1,0 +1,44 @@
+{
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 5.668791,
+    "playing": true
+  },
+  "sizes": [
+    {
+      "width": 320,
+      "overflow": false,
+      "fullWidth": true,
+      "left": 0,
+      "buttonOnTop": true,
+      "buttonBackground": "rgb(255, 113, 61)"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "fullWidth": true,
+      "left": 0,
+      "buttonOnTop": true,
+      "buttonBackground": "rgb(255, 113, 61)"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "fullWidth": true,
+      "left": 0,
+      "buttonOnTop": true,
+      "buttonBackground": "rgb(255, 113, 61)"
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "fullWidth": true,
+      "left": 0,
+      "buttonOnTop": true,
+      "buttonBackground": "rgb(255, 113, 61)"
+    }
+  ],
+  "workNavigation": "#work",
+  "errors": []
+}

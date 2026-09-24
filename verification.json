@@ -1,0 +1,159 @@
+{
+  "desktopOverflow": false,
+  "heroHeading": "Architecture.\nConstruction.\nIntelligence.",
+  "videos": 4,
+  "assets": [
+    {
+      "path": "assets/videos/hero.webm",
+      "status": 200
+    },
+    {
+      "path": "assets/images/nexus-bim.webp",
+      "status": 200
+    },
+    {
+      "path": "assets/images/structure.svg",
+      "status": 200
+    },
+    {
+      "path": "assets/videos/nexus.webm",
+      "status": 200
+    },
+    {
+      "path": "assets/images/shinde.webp",
+      "status": 200
+    },
+    {
+      "path": "assets/videos/shinde.webm",
+      "status": 200
+    },
+    {
+      "path": "assets/images/windmere.webp",
+      "status": 200
+    },
+    {
+      "path": "assets/videos/windmere.webm",
+      "status": 200
+    },
+    {
+      "path": "assets/images/miami-small.webp",
+      "status": 200
+    },
+    {
+      "path": "assets/images/controls-small.webp",
+      "status": 200
+    },
+    {
+      "path": "assets/images/sports-small.webp",
+      "status": 200
+    },
+    {
+      "path": "assets/images/motorcycle-small.webp",
+      "status": 200
+    },
+    {
+      "path": "assets/projects/roshan-raj-resume.pdf",
+      "status": 200
+    }
+  ],
+  "modals": [
+    {
+      "key": "planning",
+      "open": true,
+      "images": 5
+    },
+    {
+      "key": "architecture",
+      "open": true,
+      "images": 3
+    },
+    {
+      "key": "resilience",
+      "open": true,
+      "images": 3
+    },
+    {
+      "key": "miami",
+      "open": true,
+      "images": 5
+    },
+    {
+      "key": "controls",
+      "open": true,
+      "images": 6
+    },
+    {
+      "key": "sports",
+      "open": true,
+      "images": 4
+    },
+    {
+      "key": "motorcycle",
+      "open": true,
+      "images": 2
+    }
+  ],
+  "mobileOverflow": false,
+  "mobileMenu": "true",
+  "mobileMenuCloses": "false",
+  "motionPaused": "true",
+  "playingWhenPaused": 0,
+  "reducedMotionVideos": 0,
+  "playingAtTop": 1,
+  "videoMetadata": [
+    {
+      "src": "assets/videos/hero.webm",
+      "width": 1920,
+      "height": 1080,
+      "duration": 9.625118
+    },
+    {
+      "src": "assets/videos/nexus.webm",
+      "width": 1920,
+      "height": 1080,
+      "duration": 9.646733
+    },
+    {
+      "src": "assets/videos/shinde.webm",
+      "width": 1920,
+      "height": 1080,
+      "duration": 9.661691
+    },
+    {
+      "src": "assets/videos/windmere.webm",
+      "width": 1920,
+      "height": 1080,
+      "duration": 9.683322
+    }
+  ],
+  "viewportChecks": [
+    {
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "pausedScroll": true,
+  "pausedScrollPosition": 762,
+  "noJS": {
+    "heading": true,
+    "email": 1
+  },
+  "errors": [],
+  "failedResponses": []
+}

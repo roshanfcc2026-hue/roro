@@ -1,0 +1,70 @@
+{
+  "name": "Roshan Raj Kantharaja — Architecture. Construction. Intelligence.",
+  "removedSections": 0,
+  "brokenAnchors": [],
+  "wheel": [
+    {
+      "key": "planning",
+      "scroll": 580,
+      "backgroundStayed": true
+    },
+    {
+      "key": "architecture",
+      "scroll": 580,
+      "backgroundStayed": true
+    },
+    {
+      "key": "resilience",
+      "scroll": 580,
+      "backgroundStayed": true
+    },
+    {
+      "key": "miami",
+      "scroll": 580,
+      "backgroundStayed": true
+    },
+    {
+      "key": "controls",
+      "scroll": 580,
+      "backgroundStayed": true
+    },
+    {
+      "key": "sports",
+      "scroll": 580,
+      "backgroundStayed": true
+    },
+    {
+      "key": "motorcycle",
+      "scroll": 451,
+      "backgroundStayed": true
+    }
+  ],
+  "featuredGallery": [
+    "http://127.0.0.1:4173/assets/images/nexus-exterior.webp",
+    "http://127.0.0.1:4173/assets/images/nexus-model.webp",
+    "http://127.0.0.1:4173/assets/images/nexus-model-reverse.webp",
+    "http://127.0.0.1:4173/assets/images/nexus.webp",
+    "http://127.0.0.1:4173/assets/images/nexus-section.webp"
+  ],
+  "credentialExpanded": true,
+  "widths": [
+    {
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "mobileDialogScroll": 500,
+  "errors": []
+}

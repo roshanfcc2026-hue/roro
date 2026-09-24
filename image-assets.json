@@ -1,0 +1,465 @@
+{
+  "site": "Website 1",
+  "publishDirectory": "Website 1",
+  "nestedPathVerified": true,
+  "imageCount": 34,
+  "issues": [],
+  "images": [
+    {
+      "file": "assets/icons/favicon.svg",
+      "bytes": 273,
+      "sha256": "c516be85ebf46283f61e8040744a27625305ae882c93d8fe54cdb15d3acfa8ec",
+      "width": 150,
+      "height": 150,
+      "usedBy": [
+        "browser image request",
+        "homepage 1440px",
+        "homepage 390px",
+        "index.html",
+        "project architecture",
+        "project controls",
+        "project miami",
+        "project motorcycle",
+        "project planning",
+        "project resilience",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/images/miami.webp",
+      "bytes": 51358,
+      "sha256": "9c399de806ee02d953c38ae16eecf75ffa3c409cd3756dce456e9782689c0c31",
+      "width": 382,
+      "height": 491,
+      "usedBy": [
+        "browser image request",
+        "homepage 1440px",
+        "homepage 390px",
+        "index.html",
+        "project architecture",
+        "project controls",
+        "project miami",
+        "project motorcycle",
+        "project planning",
+        "project resilience",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/images/motorcycle.webp",
+      "bytes": 128002,
+      "sha256": "8dccfdadb5a536099a1d557afebc98d75d37e6e68107a5d064cd90e4ed6d37e6",
+      "width": 1517,
+      "height": 841,
+      "usedBy": [
+        "browser image request",
+        "homepage 1440px",
+        "homepage 390px",
+        "index.html",
+        "project architecture",
+        "project controls",
+        "project miami",
+        "project motorcycle",
+        "project planning",
+        "project resilience",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/images/nexus-exterior-hq.webp",
+      "bytes": 318504,
+      "sha256": "56ddeb51f18b8c7f30242455fa4d2c60ba2c874ded4afd867b5a24331ca70eeb",
+      "width": 664,
+      "height": 638,
+      "usedBy": [
+        "browser image request",
+        "homepage 1440px",
+        "homepage 390px",
+        "index.html",
+        "project architecture",
+        "project controls",
+        "project miami",
+        "project motorcycle",
+        "project planning",
+        "project resilience",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/images/nexus-model-reverse.webp",
+      "bytes": 27306,
+      "sha256": "38e99604c9b991abed83de3e66c076e22efb219869db6fabd3d1bcb71ea0e2b2",
+      "width": 421,
+      "height": 253,
+      "usedBy": [
+        "browser image request",
+        "project planning"
+      ]
+    },
+    {
+      "file": "assets/images/nexus-model.webp",
+      "bytes": 21604,
+      "sha256": "7d4b319544e3c1afb17e9d323180c69dca68c8171119c3eb4b5c4663d71a871c",
+      "width": 421,
+      "height": 258,
+      "usedBy": [
+        "browser image request",
+        "project planning"
+      ]
+    },
+    {
+      "file": "assets/images/nexus-section.webp",
+      "bytes": 54618,
+      "sha256": "2524f5a2557077378e981df35d6e1dac0b12fa15fb55016c86c531e05e9c7bb3",
+      "width": 922,
+      "height": 241,
+      "usedBy": [
+        "browser image request",
+        "project planning"
+      ]
+    },
+    {
+      "file": "assets/images/nexus.webp",
+      "bytes": 144528,
+      "sha256": "dfb81c83d634f3571251aea3503a229226806a6b13ba7fc4773af888e1c57a1f",
+      "width": 940,
+      "height": 454,
+      "usedBy": [
+        "browser image request",
+        "homepage 1440px",
+        "homepage 390px",
+        "index.html",
+        "project architecture",
+        "project controls",
+        "project miami",
+        "project motorcycle",
+        "project planning",
+        "project resilience",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/images/sports-front-original.png",
+      "bytes": 1786533,
+      "sha256": "11805611fb7f26039e4ede50df432714aded1ce3be3bc8d26c47d1eb3e6fdf70",
+      "width": 2435,
+      "height": 850,
+      "usedBy": [
+        "browser image request",
+        "homepage 1440px",
+        "homepage 390px",
+        "index.html",
+        "project architecture",
+        "project controls",
+        "project miami",
+        "project motorcycle",
+        "project planning",
+        "project resilience",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/images/structure.svg",
+      "bytes": 16775,
+      "sha256": "b598db6c03b7883fa2f1f41889bf46c2d2ebe1dae134166a7c1794c0dd83825f",
+      "width": 180,
+      "height": 150,
+      "usedBy": [
+        "browser image request",
+        "homepage 1440px",
+        "homepage 390px",
+        "index.html",
+        "project architecture",
+        "project controls",
+        "project miami",
+        "project motorcycle",
+        "project planning",
+        "project resilience",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/images/windmere.webp",
+      "bytes": 248742,
+      "sha256": "7d56f19d4a2b7f48b4299b82de4214fdc939cfede96ac65971417bd198473de5",
+      "width": 1528,
+      "height": 973,
+      "usedBy": [
+        "browser image request",
+        "homepage 1440px",
+        "homepage 390px",
+        "index.html",
+        "project architecture",
+        "project controls",
+        "project miami",
+        "project motorcycle",
+        "project planning",
+        "project resilience",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/projects/page-11.webp",
+      "bytes": 689992,
+      "sha256": "e591cbdb2dd5de5da168af81c05f0abe7e1d40e2292245fbef8ac376cb9e3872",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project miami"
+      ]
+    },
+    {
+      "file": "assets/projects/page-12.webp",
+      "bytes": 649196,
+      "sha256": "26e7cc5af40af8886b300db7ff819f9e2d3893413f1b0e27aae7fd114d978969",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project miami"
+      ]
+    },
+    {
+      "file": "assets/projects/page-13.webp",
+      "bytes": 304510,
+      "sha256": "3358f1cc57b03bd9b88d55829cb489fe6d03470fd0d232ab0760f04d8c6a8cad",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project miami"
+      ]
+    },
+    {
+      "file": "assets/projects/page-14.webp",
+      "bytes": 1200156,
+      "sha256": "aed80b55cabbe7be828bd8d4ee5894c933ab4840d6639132800dc17b95236eb8",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project miami"
+      ]
+    },
+    {
+      "file": "assets/projects/page-15.webp",
+      "bytes": 1124288,
+      "sha256": "ed2db47785b2935aaeb2ccc4d30e9ff5059162f36b29eeb155acaa8dfc95a102",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project miami"
+      ]
+    },
+    {
+      "file": "assets/projects/page-16.webp",
+      "bytes": 907250,
+      "sha256": "998be966314b8d287332dfeda685c12861a031bad5ca0adaa261217c8c134002",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project controls"
+      ]
+    },
+    {
+      "file": "assets/projects/page-17.webp",
+      "bytes": 649440,
+      "sha256": "397895abecbcbe71194fd09661cf96151aab95223dc4ed22746fe4276ad24776",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project controls"
+      ]
+    },
+    {
+      "file": "assets/projects/page-18.webp",
+      "bytes": 404864,
+      "sha256": "455fe459120fb7f10358adeb2fa7e124d12a13e9f1cb7b2dc71a036f541956ef",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project controls"
+      ]
+    },
+    {
+      "file": "assets/projects/page-19.webp",
+      "bytes": 557166,
+      "sha256": "9cd6643d6cc72b7f65582a22409759acb5eb80b36614dbdfb07d563a0691d3a9",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project controls"
+      ]
+    },
+    {
+      "file": "assets/projects/page-20.webp",
+      "bytes": 455516,
+      "sha256": "9af1d7d20c7da3a2c07324efc36715e8d2e8d8686bbe6b1b4f8d88c3f405bbee",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project controls"
+      ]
+    },
+    {
+      "file": "assets/projects/page-21.webp",
+      "bytes": 465168,
+      "sha256": "1045d9f57b80f52dd98acdae21c3ce6d2e3dfd6dd4584ca83131cab3a479a671",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project controls"
+      ]
+    },
+    {
+      "file": "assets/projects/page-23.webp",
+      "bytes": 591254,
+      "sha256": "5e7a6ff61376d94307ad40be7142418b9ded18faca0b1c93d5ef162513be388c",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/projects/page-24.webp",
+      "bytes": 977702,
+      "sha256": "24baf9a77f0155a7d95a2f7af53b7c2a459c8696afcca00078c785167255ce77",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/projects/page-25.webp",
+      "bytes": 691742,
+      "sha256": "f9a9de396ece995fbe965b97cccc556d36d2af10f48803aa770ad549a0c3e641",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/projects/page-26.webp",
+      "bytes": 593792,
+      "sha256": "4e4077c1091f391b5aad871bd6282e3d672f5c9303a7179629340caaa0db282e",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/projects/page-28.webp",
+      "bytes": 497962,
+      "sha256": "84378c02730f14cd4619e5d0931aa648bcfb9b042cfa296e6d0ab86c158d1cd7",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project architecture"
+      ]
+    },
+    {
+      "file": "assets/projects/page-29.webp",
+      "bytes": 525544,
+      "sha256": "13f424f8cb3e76643b368386875d5d668426c1fc6db92ca42eb3b37ce7ab26b8",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project architecture"
+      ]
+    },
+    {
+      "file": "assets/projects/page-30.webp",
+      "bytes": 674180,
+      "sha256": "85899e5c7bb14c32af116ba6095f8da4c4c06d40993ee170d350e253e764567f",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "bubbles.css",
+        "homepage 1440px",
+        "homepage 390px",
+        "index.html",
+        "project architecture",
+        "project controls",
+        "project miami",
+        "project motorcycle",
+        "project planning",
+        "project resilience",
+        "project sports"
+      ]
+    },
+    {
+      "file": "assets/projects/page-31.webp",
+      "bytes": 466758,
+      "sha256": "da373ecf93474da980dc288621cb896cf4fb2936d03d1a29832fe756e19befe3",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project resilience"
+      ]
+    },
+    {
+      "file": "assets/projects/page-32.webp",
+      "bytes": 415776,
+      "sha256": "17ccabdae7ba58c153443c38dd870dad23fe91e3613601f7b04f46933863144d",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project resilience"
+      ]
+    },
+    {
+      "file": "assets/projects/page-33.webp",
+      "bytes": 434232,
+      "sha256": "bb8f3d2e0b36a4be0c94b263d807c7d29111e1177ce2a4d4a5f3a41cff84f1a3",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project resilience"
+      ]
+    },
+    {
+      "file": "assets/projects/page-34.webp",
+      "bytes": 389586,
+      "sha256": "6b9b6a7190753db32b3d4b6761370cbbfcea5b8364edc9820f677cac80377694",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project motorcycle"
+      ]
+    },
+    {
+      "file": "assets/projects/page-35.webp",
+      "bytes": 586360,
+      "sha256": "556a02e9eb0a2d3cf080776074bebc78284049b6f2554f35cc71fb8b140017e4",
+      "width": 1754,
+      "height": 2481,
+      "usedBy": [
+        "browser image request",
+        "project motorcycle"
+      ]
+    }
+  ]
+}
