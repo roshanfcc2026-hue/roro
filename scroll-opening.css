@@ -1,0 +1,26 @@
+body.cinematic-edition{padding:0}
+main{overflow:visible;border-radius:0}
+main>.section,main>.discipline-strip,main>.building-story,body>footer{width:calc(100% - var(--rail) - 30px);margin-left:10px}
+.hero.scroll-opening{height:420svh;min-height:0;max-height:none;display:block;padding:0;overflow:visible;background:#101613;isolation:auto;width:100%;color:#fff}
+.hero.scroll-opening::before{display:none}
+.scroll-stage{position:sticky;top:0;height:100svh;overflow:hidden;background:#101613}
+#construction-scrub{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.scroll-shade{position:absolute;inset:0;background:linear-gradient(180deg,#07100dd9 0%,#07100d25 35%,transparent 58%,#07100ddd 100%);pointer-events:none}
+.scroll-copy{position:absolute;top:115px;left:5vw;right:5vw}
+.scroll-opening .opening-kicker{text-align:left;color:#e6eddf;font-size:10px}
+.scroll-opening .hero-title-wrap{margin:22px 0 0;text-align:left}
+.scroll-opening h1{color:#fff;font-size:clamp(48px,6vw,100px);text-shadow:0 2px 24px #0006}
+.scroll-opening h1>span{color:#d8e4cc}
+.scroll-bottom{position:absolute;bottom:35px;left:5vw;right:5vw;display:flex;align-items:end;gap:35px;justify-content:space-between;color:#fff}
+.scroll-opening .opening-cta{margin:0;background:#eff2e8;color:#243d2b;box-shadow:0 3px 24px #0005}
+.scrub-readout{width:220px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:13px;font:9px var(--mono);letter-spacing:.08em}
+.scrub-track{width:100%;height:2px;background:#ffffff40;overflow:hidden}.scrub-track span{display:block;height:100%;background:#e0ebd3;transform:scaleX(0);transform-origin:left}
+.scroll-bottom button{font:10px var(--mono);color:#fff;padding:12px 0}
+.scrub-error{position:absolute;bottom:110px;left:5vw;font-size:12px;color:white}
+body.opening-active .chapter-nav{visibility:hidden;pointer-events:none;transform:translateX(110%)}
+body.opening-active .header,body.opening-active .header .menu-toggle{color:#fff}
+body.opening-active .header .header-descriptor{color:#dce6d7}
+body.opening-active .header{right:5vw;left:5vw}
+.hero.scroll-opening.is-static{height:100svh}.is-static .scroll-stage{position:relative}
+@media(max-width:700px){main>.section,main>.discipline-strip,main>.building-story,body>footer{width:100%;margin-left:0}.scroll-copy{top:100px;left:24px;right:24px}.scroll-opening h1{font-size:clamp(45px,12vw,70px)}.scroll-opening .opening-kicker{font-size:7px}.scroll-bottom{left:24px;right:24px;bottom:25px;flex-wrap:wrap;gap:22px}.scrub-readout{width:100%;order:-1}.scroll-bottom button{font-size:8px}#construction-scrub{object-fit:contain}.scroll-shade{background:linear-gradient(#10161399,transparent 45%,#10161355)} }
+@media(prefers-reduced-motion:reduce){.hero.scroll-opening{height:100svh}}

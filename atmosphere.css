@@ -1,0 +1,30 @@
+/* A continuous, original smoke field; all interaction remains on the content. */
+body.atmospheric-edition{background:radial-gradient(ellipse at 70% 30%,#263434,#0b1013 65%);color:#eef0e9;--orange:#bacdbb}
+#site-atmosphere{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.atmospheric-edition main,.atmospheric-edition footer{position:relative;z-index:1}
+.atmospheric-edition .work,.atmospheric-edition .profile,.atmospheric-edition .contact,.atmospheric-edition .bubble-gallery{background:transparent;color:#eef0e9;border-top:1px solid #bfd1c21f}
+.atmospheric-edition .work .section-heading h2,.atmospheric-edition .work .project-info h3,.atmospheric-edition .contact-heading h2,.atmospheric-edition .bubble-heading h2{color:#eef0e9}
+.atmospheric-edition .section-label,.atmospheric-edition .work .section-label,.atmospheric-edition .work .section-heading p,.atmospheric-edition .bubble-heading .mono,.atmospheric-edition .bubble-tools p,.atmospheric-edition .work .project-info p,.atmospheric-edition .work .project-description p,.atmospheric-edition .work .eyebrow,.atmospheric-edition .profile p,.atmospheric-edition .contact p{color:#bdc8c3}
+.atmospheric-edition .serif,.atmospheric-edition .work .section-heading .serif,.atmospheric-edition .contact-heading .serif{color:#bdd1c3}
+.atmospheric-edition .flagship,.atmospheric-edition .sports-walkthrough,.atmospheric-edition .profile .credential-card,.atmospheric-edition .profile .identity-panel{background:#121e21b8;border:1px solid #bfd1c22a;box-shadow:0 24px 75px #0003}
+.atmospheric-edition .work .tags,.atmospheric-edition .bubble-footer .mono,.atmospheric-edition .bubble-footer .text-link,.atmospheric-edition .bubble-footer .text-link span{color:#c5d1c7}
+.atmospheric-edition .work .tags span,.atmospheric-edition .project-description,.atmospheric-edition .bubble-footer{border-color:#bfd1c22a}
+.atmospheric-edition .work .project-open,.atmospheric-edition .bubble-tools button,.atmospheric-edition .contact-actions a{background:#142125b0;color:#eff2eb;border-color:#bfd1c250}
+.atmospheric-edition .contact-actions a:first-child{background:#c3d4c5;color:#14211d}
+.atmospheric-edition .contact-arrow{color:#c3d4c5}.atmospheric-edition .contact-orbit{border-color:#c3d4c51c}
+.atmospheric-edition .chapter-nav{background:#0e171ae8;border:1px solid #bfd1c220;backdrop-filter:blur(16px)}
+.atmospheric-edition .chapter-nav a:nth-child(n){background:transparent;color:#e5eae4;border-bottom:1px solid #bfd1c21a}
+.atmospheric-edition .chapter-nav a:hover,.atmospheric-edition .chapter-nav a.active{background:#b5cbb41a}
+.atmospheric-edition .chapter-nav span{color:#aabeb1}
+.atmospheric-edition .discipline-strip,.atmospheric-edition footer{background:#101b1c99;color:#bfcec4;border-block:1px solid #bfd1c220}
+.atmospheric-edition .building-story,.atmospheric-edition .building-stage{background:transparent;color:#ecf0e8}
+.atmospheric-edition .building-intro p,.atmospheric-edition .building-intro .mono,.atmospheric-edition .building-instructions{color:#c3d1c8}
+.atmospheric-edition .building-caption{background:#101c20ef;border-color:#bfd1c23a;color:#f0f3e9}
+.atmospheric-edition .building-caption p,.atmospheric-edition .building-caption .mono{color:#bacbc0}
+.atmospheric-edition .building-parts button,.atmospheric-edition .building-controls button{color:#e5eee5;background:#142126ec;border-color:#bfd1c245}
+.atmospheric-edition .building-parts button[aria-pressed=true],.atmospheric-edition .building-controls button[aria-pressed=true]{background:#bbcebc;color:#15261c}
+.atmospheric-edition .building-progress{background:#bfd1c21a}.atmospheric-edition .building-progress span{background:#bdd3c3}
+.atmospheric-edition .bubble-orbits{border-color:#bdd3c31c}
+.atmospheric-edition .sports-walkthrough{border-radius:8px}.atmospheric-edition .contact{padding-block:120px}
+@media(max-width:700px){.atmospheric-edition .contact{padding-block:65px}}
+@media(prefers-reduced-motion:reduce){#site-atmosphere{opacity:.7}}

@@ -61,7 +61,7 @@
         "Critical-path activities and model views"
       ]
     ],
-    "source": "Source: portfolio pages 6–10. Presented as a pre-construction study; project year and academic affiliation are not explicitly stated. Study parameters are not claims of construction completion.",
+    "source": "",
     "visualGallery": [
       [
         "nexus-exterior-hq",
@@ -129,7 +129,7 @@
         "Interior views and material expression"
       ]
     ],
-    "source": "Source: portfolio pages 28–30; related healthcare responsibilities appear in the experience record on page 4."
+    "source": ""
   },
   "resilience": {
     "category": "03 / WINDMERE VALLEY RESORT · YERCAUD",
@@ -167,7 +167,7 @@
         "Hospitality spaces and landscape relationships"
       ]
     ],
-    "source": "Source: portfolio pages 31–33 and related hospitality experience on page 4. The source heading spells the location ‘Yercud’; body text identifies Yercaud."
+    "source": ""
   },
   "miami": {
     "category": "04 / MIAMI TOWER · PRE-CONSTRUCTION STUDY",
@@ -213,7 +213,7 @@
         "Schedule and critical activities"
       ]
     ],
-    "source": "Source: portfolio pages 11–15. No completed-project or independent LEED-certification claim is made."
+    "source": ""
   },
   "controls": {
     "category": "05 / PRIMAVERA P6 · PROJECT CONTROLS",
@@ -263,7 +263,7 @@
         "Schedule-check continuation"
       ]
     ],
-    "source": "Source: portfolio pages 16–21. Analysis dates and reported values are preserved in the source images; they are not presented as current project status."
+    "source": ""
   },
   "sports": {
     "category": "06 / ARCHITECTURE THESIS · BANGALORE",
@@ -305,7 +305,7 @@
         "Plans, sections, structural diagrams and views"
       ]
     ],
-    "source": "Source: portfolio pages 23–26. Academic thesis; project-specific year and software are not stated."
+    "source": ""
   },
   "motorcycle": {
     "category": "07 / MOTORCYCLE SERVICE FACILITY · AARDE",
@@ -339,37 +339,13 @@
         "Role, technical scope, model views and delivery"
       ]
     ],
-    "source": "Source: portfolio pages 34–35 and experience on page 4. Project dates are not separately stated."
+    "source": ""
   }
 };
   const dialog = document.querySelector('#project-dialog');
   document.querySelectorAll('[data-project]').forEach(button => button.addEventListener('click', () => {
-    const study = studies[button.dataset.project];
-    document.querySelector('#dialog-category').textContent = study.category;
-    document.querySelector('#dialog-title').textContent = study.title;
-    document.querySelector('#dialog-intro').textContent = study.intro;
-    const body = document.querySelector('#dialog-body'); body.replaceChildren();
-    if (button.dataset.project === 'architecture') {
-      const figure = document.createElement('figure'); figure.className = 'shinde-original-view';
-      const image = document.createElement('div'); image.className = 'shinde-interior'; image.setAttribute('role', 'img'); image.setAttribute('aria-label', 'Original Shinde eyewear interior rendering from portfolio page 30');
-      const caption = document.createElement('figcaption'); caption.textContent = 'Original interior rendering · Portfolio p. 30'; figure.append(image,caption);body.append(figure);
-    }
-
-    study.sections.forEach(([title, text]) => { const section = document.createElement('section'); const heading = document.createElement('h3'); const paragraph = document.createElement('p'); heading.textContent = title; paragraph.textContent = text; section.append(heading, paragraph); body.append(section); });
-    const gallery = document.querySelector('#dialog-gallery'); gallery.replaceChildren();
-    const visual = Boolean(study.visualGallery);
-    gallery.classList.toggle('building-gallery', visual);
-    (study.visualGallery || study.gallery).forEach(([asset, caption]) => {
-      const figure = document.createElement('figure'); const link = document.createElement('a');
-      link.href = visual ? `assets/images/${asset}.webp` : `assets/projects/page-${asset}.webp`;
-      link.target = '_blank'; link.rel = 'noopener';
-      const img = document.createElement('img'); img.src = link.href; img.alt = caption; img.loading = 'lazy';
-      if (!visual) { img.width = 1754; img.height = 2481; }
-      const label = document.createElement('figcaption'); label.textContent = visual ? `${caption} · Open full size ↗` : `${caption} · Portfolio p. ${Number(asset)} · Open full size ↗`;
-      link.append(img); figure.append(link, label); gallery.append(figure);
-    });
-    document.querySelector('#dialog-source').textContent = study.source;
-    document.body.classList.add('dialog-open'); if (lenis) lenis.stop(); dialog.showModal(); dialog.scrollTop = 0; pauseAllVideos();
+    const origin = button.closest('#building-tour') ? 'building-tour' : button.closest('.flagship') ? 'work' : 'project-index';
+    window.location.href = `projects/${button.dataset.project}.html?from=${origin}`;
   }));
   document.querySelector('#dialog-close').addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', event => { if (event.target === dialog) { const box = dialog.getBoundingClientRect(); if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close(); } });
