@@ -94,6 +94,20 @@ button{font:inherit;color:inherit}
 .me .fbtns .btn{flex:none;min-height:48px}
 @media(max-width:760px){.me-body{grid-template-columns:1fr}.me-img{aspect-ratio:4/3}}
 .fc-img{display:block;text-decoration:none;color:inherit;overflow:hidden}.fc-img{padding:0 0 16px}.fc-img>:not(img){margin-left:16px;margin-right:16px}.fc-img img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;margin:0 0 6px;border-radius:13px 13px 0 0}.fc-img:hover{border-color:#ffb547}
+.ct{max-width:980px;margin:28px auto 40px}
+.ct h1{font:700 clamp(36px,6vw,64px)/1.02 var(--ft);letter-spacing:-.03em;margin:6px 0 12px}
+.ct .lead{font-size:clamp(16px,2vw,19px);color:var(--ink2);max-width:640px;margin:0 0 28px}
+.ct-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.ct-card{display:flex;flex-direction:column;gap:14px;background:var(--p2);border:1px solid var(--line);border-radius:20px;padding:clamp(22px,3vw,32px);color:inherit;text-decoration:none;transition:border-color .15s,transform .15s;min-width:0}
+a.ct-card:hover,.ct-card:focus-within{border-color:#2fd39a}
+a.ct-card:hover{transform:translateY(-2px)}
+.ct-ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:rgba(47,211,154,.12);color:#2fd39a}
+.ct-ic svg{width:26px;height:26px}
+.ct-lab{font:600 13px var(--fb);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.ct-val{font:700 clamp(19px,2.6vw,26px)/1.2 var(--ft);overflow-wrap:anywhere;color:var(--ink)}
+.ct-acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.ct-big{grid-column:1/-1}
+.ct-big .ct-val{font-size:clamp(22px,4vw,40px)}
 .me-ferro{padding:0 clamp(20px,3vw,36px) clamp(22px,3vw,32px)}
 .fc{margin-top:8px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(255,181,71,.06),transparent 220px),var(--p);padding:clamp(20px,3vw,34px)}
 .fc-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 32px;align-items:end}
@@ -277,14 +291,14 @@ function ferroDash(){
 <body>
 <header class="top"><div class="w">
   <div class="bar1"><a class="brand" href="#home">RRK<small>Roshan Raj Kantharaja · Portfolio</small></a>
-    <a class="icon" href="mailto:rajroshank1998@gmail.com" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+    <a class="icon" href="#contact" aria-label="Contact"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
   </div>
   <nav class="cats" id="cats" aria-label="Project categories"></nav>
 </div></header>
 
 <main class="w">
   <div id="v-home"><div id="home-body"></div>
-    <footer class="contact" id="contact"><span>Roshan Raj Kantharaja · Los Angeles · rajroshank1998@gmail.com</span><span><a href="https://www.linkedin.com/in/roshan-raj-k" target="_blank" rel="noopener">LinkedIn ↗</a> · <a href="https://github.com/roshanfcc2026-hue/roro/tree/main/ai-portfolio" target="_blank" rel="noopener">GitHub ↗</a> · <a href="https://roshanfcc2026-hue.github.io/roro/" target="_blank" rel="noopener">Architecture portfolio ↗</a></span></footer>
+    <footer class="contact" id="site-footer"><span>Roshan Raj Kantharaja · Los Angeles · rajroshank1998@gmail.com</span><span><a href="https://www.linkedin.com/in/roshan-raj-k" target="_blank" rel="noopener">LinkedIn ↗</a> · <a href="https://github.com/roshanfcc2026-hue/roro/tree/main/ai-portfolio" target="_blank" rel="noopener">GitHub ↗</a> · <a href="https://roshanfcc2026-hue.github.io/roro/" target="_blank" rel="noopener">Roshan Raj Portfolio ↗</a></span></footer>
   </div>
   <div id="v-project" hidden></div>
 </main>
@@ -736,15 +750,35 @@ function page(p){
   <nav class="pn"><a href="#${prev.id}">← ${esc(prev.title)}</a><a href="#${next.id}">${esc(next.title)} →</a></nav>`;
 }
 
+function contactPage(){
+  const em='rajroshank1998@gmail.com', li='https://www.linkedin.com/in/roshan-raj-k', site='https://roshanfcc2026-hue.github.io/roro/';
+  return `<nav class="crumb" aria-label="Breadcrumb"><a href="#home">Projects</a><span>/</span><span>Contact</span></nav>
+  <section class="ct" aria-label="Contact">
+    <span class="me-tag" style="color:#2fd39a;border-color:#2fd39a">Contact</span>
+    <h1>Let’s talk.</h1>
+    <p class="lead">Open to project engineering and AI-in-construction roles. Email is the fastest way to reach me.</p>
+    <div class="ct-grid">
+      <div class="ct-card ct-big"><div class="ct-ic">${IC.mail}</div><span class="ct-lab">Email</span>
+        <a class="ct-val" href="mailto:${em}" style="text-decoration:none">${em}</a>
+        <div class="ct-acts"><a class="btn pri" href="mailto:${em}">Send an email ↗</a><button type="button" class="btn" id="ct-copy">Copy email</button></div></div>
+      <a class="ct-card" href="${li}" target="_blank" rel="noopener"><div class="ct-ic">${IC.li}</div><span class="ct-lab">LinkedIn</span>
+        <span class="ct-val">linkedin.com/in/roshan-raj-k</span><span class="ct-acts"><span class="btn pri">Open LinkedIn ↗</span></span></a>
+      <a class="ct-card" href="${site}" target="_blank" rel="noopener"><div class="ct-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div><span class="ct-lab">Portfolio</span>
+        <span class="ct-val">Roshan Raj Portfolio</span><span class="ct-acts"><span class="btn pri">Open portfolio ↗</span></span></a>
+    </div>
+  </section>`;
+}
 const home = document.getElementById('v-home'), proj = document.getElementById('v-project');
 function route(){
   const id = location.hash.slice(1), p = P.find(x => x.id === id);
+  if(id === 'contact'){ proj.innerHTML = contactPage(); proj.hidden = false; home.hidden = true; document.title = 'Contact — Roshan Raj Kantharaja'; window.scrollTo(0,0); return; }
   if(p){ proj.innerHTML = page(p); proj.hidden = false; home.hidden = true; document.title = p.title + ' — Roshan Raj Kantharaja'; window.scrollTo(0,0); return; }
   const was = !proj.hidden; proj.hidden = true; home.hidden = false; document.title = 'Roshan Raj Kantharaja — Portfolio';
   drawHome();
-  if(id === 'contact') document.getElementById('contact').scrollIntoView(); else if(was) window.scrollTo(0,0);
+  if(was) window.scrollTo(0,0);
 }
 document.getElementById('v-project').addEventListener('click', e => {
+  const cp = e.target.closest('#ct-copy'); if(cp){ const done=()=>{cp.textContent='Copied ✓';setTimeout(()=>cp.textContent='Copy email',1800)}; try{ navigator.clipboard.writeText('rajroshank1998@gmail.com').then(done,()=>{cp.textContent='rajroshank1998@gmail.com'}); }catch(_){ cp.textContent='rajroshank1998@gmail.com'; } return; }
   const so = e.target.closest('[data-fsort]'), jb = e.target.closest('[data-fjob]');
   if(!so && !jb) return;
   if(so) FSORT = so.dataset.fsort; if(jb){ FOPEN = +jb.dataset.fjob; }
