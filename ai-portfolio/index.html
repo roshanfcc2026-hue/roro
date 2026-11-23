@@ -447,11 +447,11 @@ const P = [
   id:'buildmatch', type:'Product prototype', status:'Working prototype', year:'2025',
   title:'BuildMatch: matching projects with verified local trades',
   short:'A two-sided marketplace I designed from my startup pitch: clients post a scope, get local trade pros ranked out of 100, compare quotes side by side and hire, with a green-credential path for subcontractors.',
-  facts:[['0–100','Match score'],['5','Ranking factors'],['2','Sides: client & trade pro']],
+  facts:[['89','Real LA permit cases'],['64','Real contractors'],['0','Cases with no match']],
   links:[['Open the app','https://claude.ai/artifact/A9Jrd49uXiwsyit6aTzEo6']],
   lead:'Finding a reliable, licensed subcontractor still means calling around. BuildMatch turns that into one thread: post the job, see who fits and why, collect quotes, and hire, while trade pros get a feed of jobs in their own trade nearby.',
-  side:[['Role','Founder; turned my pitch deck into a working app'],['Users','Clients and GCs hiring, plus trade pros'],['Data','Saved projects and quotes, shared by everyone with the link'],['Built with','Claude, HTML, JavaScript'],['Status','Working prototype with sample pro profiles']],
-  glance:[['0–100','Match score for every pro'],['5','Factors: distance, rating, verification, green, availability'],['3','Plan tiers: Basic, Pro, Company'],['2','Views: hiring and trade pro']],
+  side:[['Role','Founder; turned my pitch deck into a working app'],['Users','Clients and GCs hiring, plus trade pros'],['Data','Saved projects and quotes, shared by everyone with the link'],['Built with','Claude, HTML, JavaScript'],['Real data','City of LA building permits (LA open data)'],['Status','Working prototype, tested on real LA permits']],
+  glance:[['89','Real LA permit cases run'],['64','Real licensed contractors loaded'],['80%','Cases with 3+ matches'],['6.9 mi','Typical distance to top match']],
   problem:['Clients and general contractors find subs through phone calls and word of mouth, with little visibility into license, insurance, availability or sustainability credentials. Small trade businesses, meanwhile, miss jobs that fit them because they never hear about them.'],
   pipe:[['Post','Describe the job','AI fills in the form'],['Match','Ranked pros','Scored out of 100'],['Quote','Compare side by side','Lowest and fastest flagged'],['Hire','One click','Pro is notified']],
   feat:[
@@ -461,9 +461,10 @@ const P = [
     '<b>A trade-pro side</b> with a job feed in your own trade, nearest first, where you can send and edit quotes that appear instantly on the client’s side.',
     '<b>Sustainability built in:</b> short courses lead to a Green Verified badge that ranks pros higher on green projects, and the dashboard estimates the CO₂ avoided by hiring local. There are also three plan tiers.'
   ],
+  findings:['I ran 89 real City of Los Angeles building permits through the matcher, against 64 real contractors named on LA permit records. Every case found at least one match, 71 (80%) found three or more, and there were no errors.','The typical top match was 6.9 miles away (farthest 22.2) with a score of about 60 out of 100. Scores are modest because real contractors have no ratings or availability until they join.','Framing and drywall each had only two real contractors, so none of those 18 cases reached three matches. The other eight trades all did.','The test stops at the invitation: none of these contractors is on the app yet, so quotes, hiring and reviews still need real users.'],
   gallery:[[BMM,'Smart Match scores and the Compare & hire table']],
   defs:[['Match score','Proximity 30 + rating 25 + verification 20 + green credentials 15 + availability 10 = 100'],['Green Verified','A pro who finishes the three sustainability courses'],['CO₂ avoided','Miles saved against a 25-mile average trip × 2 trips per workday × 0.4 kg CO₂ per mile']],
-  why:['A ranking only helps if people can see why someone ranked first, so every score shows its parts. AI handles the tedious steps, filling in the form and summarizing the quotes, but the client makes the hiring decision. The pro profiles are fictional sample data for now. The next step is letting real subcontractors sign up.'],
+  why:['A ranking only helps if people can see why someone ranked first, so every score shows its parts. AI handles the tedious steps, filling in the form and summarizing the quotes, but the client makes the hiring decision. The matcher now runs on real LA permit cases and real contractors from permit records; sample profiles can be hidden in the app. The next step is letting real subcontractors sign up.'],
   img:BMH
 },
 {
