@@ -187,7 +187,7 @@ a.ct-card:hover{transform:translateY(-2px)}
 .split div:last-child{color:var(--ink2)}
 /* bottom nav */
 .bnav{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(14,15,18,.97);border-top:1px solid var(--line)}
-.bnav .w{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));height:68px}
+.bnav .w{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));height:68px}
 .bnav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-decoration:none;font-size:12.5px;font-weight:600;color:var(--mute)}
 .bnav a svg{width:20px;height:20px}
 .bnav a.on,.bnav a:hover{color:#fff}
@@ -712,6 +712,7 @@ const liveN = MAIN.filter(isLive).length;
 document.getElementById('bnav').innerHTML = `
   <a href="#home" data-b="home">${IC.home}Projects</a>
   <a href="#home" data-b="live">${IC.live}<span>Live <em>${liveN}</em></span></a>
+  <a href="Roshan_Raj_Kantharaja_Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8M8 9h2"/></svg>Resume</a>
   <a href="https://www.linkedin.com/in/roshan-raj-k" target="_blank" rel="noopener">${IC.li}LinkedIn</a>
   <a href="#contact" data-b="mail">${IC.mail}Contact</a>`;
 document.getElementById('bnav').addEventListener('click', e => {
