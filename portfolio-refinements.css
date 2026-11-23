@@ -32,3 +32,9 @@ main>.chapter-divider{width:calc(100% - var(--rail) - 30px);margin-left:10px;bac
 .profile .portrait-panel{aspect-ratio:auto;min-height:0!important;align-self:start;padding:12px 0 24px;gap:22px}.portrait-statement{font:clamp(25px,2.7vw,42px)/1.15 Georgia,serif!important;text-align:center;color:#edf0e6!important;margin:0!important;letter-spacing:-.025em}.portrait-statement em{color:#b6c7a7;font-weight:400}.portrait-frame{position:relative;isolation:isolate;width:100%;aspect-ratio:600/640;display:flex;align-items:center;justify-content:center}.portrait-frame .portrait-art{z-index:-1}.portrait-panel .portrait-caption{font:14px/1.7 var(--sans,Arial,sans-serif);letter-spacing:.01em;color:#c4d1b7;margin:0;padding:18px 10px 0;border-top:1px solid #81927755;width:90%;text-align:center}.profile-layout{align-items:start}@media(max-width:700px){.profile .portrait-panel{gap:18px}.portrait-statement{font-size:30px!important}.portrait-panel .portrait-caption{font-size:13px}}
 
 .profile .portrait-panel{gap:0}.portrait-frame{aspect-ratio:600/770;padding-top:21.666%;box-sizing:border-box}.portrait-frame .portrait-art{opacity:.34}.portrait-frame img{position:relative}
+/* 04 Construction Projects: full-width feature card linking to the Ferrocrete portfolio page */
+a.project-bubble{display:block;text-decoration:none;color:#fff}
+.bubble-slot--feature{grid-column:1/-1}
+.bubble-slot--feature .project-bubble{aspect-ratio:21/8!important}
+.bubble-slot--feature .bubble-image{background-position:center 40%}
+@media(max-width:900px){.bubble-slot--feature .project-bubble{aspect-ratio:16/9!important}}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Roshan Kantharaja Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* VOICE: the next chapter of Roshan's own site: dark, editorial, quiet confidence
+   IDEA: a bound construction monograph: numbered chapters, each project a spread
+   PICTURE: each project's rendering, 3D view or site photo, large, on the dark ground
+   COLOUR and TYPE: #141613 ground, warm paper #ece8df text, drawings framed in paper white, one muted gold accent; Instrument Serif italics + Inter Tight
+   LAYOUT: hero, project index rows, sticky chapter tabs, one spread per project, systems, contact */
+:root{color-scheme:dark;--bg:#141613;--bg2:#1b1e1a;--ink:#ece8df;--mute:#9c988e;--rule:#33362f;--paper:#f4f1ea;--y:#c9a86a}
+:root[data-theme=light]{--bg:#f4f1ea;--bg2:#ebe6dc;--ink:#141613;--mute:#6b675e;--rule:#d6d0c3;--paper:#fff;--y:#8a6a2e;color-scheme:light}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Inter Tight",system-ui,sans-serif;overflow-x:clip}
+.band{padding:clamp(32px,5vw,80px) max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+em,.serif{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400}
+h1{font-size:clamp(40px,6vw,52px);line-height:1.02;margin:0;font-weight:500;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(30px,4vw,44px);line-height:1.04;margin:0;font-weight:500;letter-spacing:-.015em;text-wrap:balance}
+h3{font:500 14px/1.3 "Inter Tight",sans-serif;margin:0 0 14px;color:var(--mute)}
+.lbl{font-size:14px;color:var(--mute);margin:0 0 14px}
+p{margin:0 0 12px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px max(5vw,16px);border-bottom:1px solid var(--rule)}
+.logo{font-weight:700;font-size:20px;letter-spacing:-.02em}.logo i{color:var(--y);font-style:normal}
+.top span{font-size:14px;color:var(--mute)}
+.cover{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:end}
+.cover .lead{font-size:18px;max-width:54ch;margin:18px 0 26px;color:var(--ink)}
+.kpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--rule)}
+.kpi div{padding:14px 12px 4px 0}.kpi b{display:block;font:400 clamp(26px,3vw,34px)/1.1 "Instrument Serif",Georgia,serif}
+.kpi b.hl{color:var(--y)}.kpi span{font-size:13px;color:var(--mute)}
+.index{border-top:1px solid var(--rule)}
+.index a{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--rule);color:var(--ink);text-decoration:none;align-items:baseline}
+.index a b{font-weight:500;font-size:18px}.index a:hover b{color:var(--y)}
+.index i{font-style:normal;color:var(--mute);font-size:12px;letter-spacing:.04em;text-align:right}
+.index .no{font-size:13px;color:var(--mute)}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+nav .scroll{display:flex;gap:2px;padding:6px max(5vw,16px);max-width:1340px;margin:0 auto;overflow-x:auto}
+nav a{flex:none;color:var(--mute);text-decoration:none;font-size:14px;padding:12px 12px}
+nav a:hover,nav a:focus-visible{color:var(--ink);outline:none;box-shadow:inset 0 -2px var(--y)}
+.sheet{border-top:1px solid var(--rule)}
+.tb{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;align-items:baseline;margin-bottom:22px}
+.tb .no{font-size:13px;color:var(--mute);letter-spacing:.04em}
+.hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(20px,3vw,44px);align-items:start}
+.data{border-top:1px solid var(--rule);margin:0}
+.data div{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px solid var(--rule);font-size:15px}
+.data dt{font-size:13px;color:var(--mute)}.data dd{margin:0}
+.role{margin-top:18px;font:400 21px/1.35 "Instrument Serif",Georgia,serif}
+.part{margin-top:clamp(32px,4vw,56px)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+figure{margin:0}
+.shot{display:block;width:100%;padding:0;border:0;background:var(--paper);cursor:zoom-in;overflow:hidden;border-radius:3px}
+.shot img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.hero .shot img{aspect-ratio:16/11}
+.shot.fit img{object-fit:contain;background:var(--paper)}
+figcaption{font-size:13px;color:var(--mute);margin-top:8px;line-height:1.45}
+figcaption b{color:var(--ink);font-weight:500}
+.method{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(16px,3vw,40px)}
+.rfis{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.rfi{border:1px solid var(--rule);padding:16px 18px;background:var(--bg2);border-radius:3px}
+.rfi .h{display:flex;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:8px}
+.rfi .h b{font-weight:600;font-size:15px}
+.st{font-size:12px;padding:2px 9px;border-radius:999px;white-space:nowrap;border:1px solid var(--rule);color:var(--mute)}
+.st.ok{border-color:var(--y);color:var(--y)}
+.rfi p{font-size:14px;margin:0 0 8px}.rfi p span{font-size:12px;color:var(--mute);display:block;letter-spacing:.03em}
+.sys{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.sys div{border-top:1px solid var(--rule);padding-top:12px}.sys b{display:block;margin-bottom:4px;font-weight:500;font-size:17px}
+.sys p{font-size:14px;color:var(--mute);margin:0}
+.note{background:var(--bg2);padding:18px 20px;font-size:14px;border-left:3px solid var(--y)}
+.note ul{margin:6px 0 0;padding-left:18px}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:28px max(5vw,16px);border-top:1px solid var(--rule);font-size:13px;color:var(--mute)}
+footer a{color:var(--ink)}
+dialog{border:0;padding:0;max-width:96vw;max-height:94vh;background:transparent}
+dialog::backdrop{background:rgba(8,9,8,.92)}
+dialog img{max-width:96vw;max-height:86vh;display:block;background:#fff}
+dialog p{color:#eee;font-size:14px;margin:8px 0 0}
+#lbx{position:fixed;top:12px;right:14px;min-width:44px;min-height:44px;border-radius:999px;border:0;font:600 18px "Inter Tight";cursor:pointer;background:#f4f1ea;color:#141613}
+@media(max-width:860px){.cover,.hero,.method{grid-template-columns:minmax(0,1fr)}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.grid2,.grid3{grid-template-columns:minmax(0,1fr)}.kpi{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:no-preference){.shot img{transition:transform .5s}.shot:hover img{transform:scale(1.02)}}
+.hero.nohero{grid-template-columns:1fr}.mtext{max-width:70ch;color:var(--mute)}
+.work{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}.work li{padding-left:18px;position:relative;line-height:1.55}.work li:before{content:'';position:absolute;left:0;top:.7em;width:8px;height:1px;background:var(--y)}@media(max-width:800px){.work{grid-template-columns:1fr}}
+.mosaic{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;grid-auto-rows:170px;gap:8px;margin-top:40px}.mosaic a{position:relative;display:block;overflow:hidden;border-radius:2px}.mosaic a:first-child{grid-row:span 2}.mosaic img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.mosaic a:hover img{transform:scale(1.04)}.mosaic span{position:absolute;left:0;right:0;bottom:0;padding:22px 10px 8px;background:linear-gradient(transparent,rgba(0,0,0,.65));font-size:12px;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.7)}@media(max-width:860px){.mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:140px}.mosaic a:first-child{grid-column:span 2;grid-row:span 1}}
+.nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--rule);margin-top:18px}
+.nums div{padding:18px 14px 16px 0;border-bottom:1px solid var(--rule)}.nums b{display:block;font:400 clamp(30px,3.4vw,42px)/1 "Instrument Serif",Georgia,serif}.nums b i{font-style:normal;color:var(--y)}
+.nums span{display:block;font-size:13px;margin-top:6px}.nums small{display:block;color:var(--mute);font-size:12px;margin-top:4px;line-height:1.45}
+@media(max-width:800px){.nums{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.exp{display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;border-top:1px solid var(--rule);padding-top:18px}
+.exp h3{margin:0 0 4px;font-size:17px}.exp .meta{color:var(--mute);font-size:13px;line-height:1.5}
+.exp ul{list-style:none;padding:0;margin:0;display:grid;gap:14px}.exp li{padding-left:18px;position:relative;line-height:1.55}.exp li:before{content:'';position:absolute;left:0;top:.7em;width:8px;height:1px;background:var(--y)}.exp li b{font-weight:600}
+@media(max-width:800px){.exp{grid-template-columns:1fr}}
+.role{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:0 36px;border-top:1px solid var(--rule)}.role div{padding:16px 0;border-bottom:1px solid var(--rule)}.role h3{margin:0 0 6px;font-size:16px}.role p{margin:0;line-height:1.55;color:var(--ink,inherit)}
+</style>
+</head>
+<body>
+<div class="top"><div class="logo">RRK<i>.</i></div><span>Ferrocrete Builders</span></div>
+<header class="band"><div class="wrap cover">
+  <div>
+    
+    <h1>Construction <em>Projects.</em></h1>
+    <p class="lead">Project Engineer at Ferrocrete Builders, a self-performing concrete subcontractor in Los Angeles, supporting parking and mid-rise construction projects from preconstruction through structure. I prepare concrete estimates and quantity takeoffs, manage RFIs, submittals and change orders, coordinate structural and architectural drawings, develop pour sequences and schedules, and reconcile quantities and costs against field and vendor records. I use technology to make this work faster and more accurate: Bluebeam overlays and AI-assisted drawing review to catch conflicts early, automated invoice and daily-log tracking, and a labor productivity benchmark.</p>
+  </div>
+  <div><h3>Projects</h3><div class="index" id="index"></div></div>
+</div>
+<div class="wrap mosaic" id="mosaic"></div></header>
+
+<section class="band" id="role"><div class="wrap">
+  <div class="tb"><h2>Role <em>&amp; responsibilities.</em></h2></div>
+  <div class="role">
+    <div><h3>Project management support</h3><p>Kept pour dates and production current in the Excel CY tracker for A Street and Bungalows, fed from Buildertrend daily logs and supplier tickets, and built the 19-project productivity and cost dataset. Updated Outbuild schedules from field data and turned 23 schedules into real production rates for planning. Built 3D pour-sequence and shotcrete planning tools so the field, pump and ready-mix supplier worked from one plan. Supported the Project Director and Project Executive.</p></div>
+    <div><h3>Document control</h3><p>Coordinated 212 RFIs and 169 submittals across 8 projects through Autodesk Forma and GC platforms such as Procore. Wrote and filed 53 RFIs and 35 submittals directly, and kept a log for each project. Tracked design revisions with 17 Bluebeam overlays across 6 projects so changes carried through to takeoffs, RFIs and pricing. Wrote daily field reports.</p></div>
+    <div><h3>Cost and budget support</h3><p>Caught $49,631 in duplicate supplier bills and 722 CY of billing errors with an AI-assisted pipeline that reads supplier tickets and matches them to Buildertrend job costing. Built or priced 9 change orders ($112,086), each with Bluebeam takeoff backup tied to sheets and details, and created the firm's COR template. Audited 147 pump and finishing invoices against pour logs. Benchmarked 580,294 labor hours across 19 projects to support estimating.</p></div>
+    <div><h3>Field coordination</h3><p>Linked the office and the field: set up Bluebeam markup sheets for the foreman to record pours by sector, turned field conditions into RFIs, and coordinated layout and sequencing with GCs including JPI, Rockwood, Westport, RAAM and Mill Creek. Tracked the SDG&amp;E inspection hold point at A Street.</p></div>
+    <div><h3>Project closeout</h3><p>Helped draft warranty letters and closeout document packages for completed projects, including Home Depot San Diego, Golden Hill Apartments, Modera Melrose and Brynn. Closed out final invoice, quantity and production records on Melodia, Walnut and Tampa for the company benchmark.</p></div>
+    <div><h3>Contracts and scope</h3><p>Read GC subcontracts, exhibits and scopes of work on 7 projects to confirm what was in and out of Ferrocrete's scope, so out-of-scope work could be priced as change orders.</p></div>
+  </div>
+</div></section>
+
+<section class="band" id="numbers"><div class="wrap">
+  <div class="tb"><h2>By the <em>numbers.</em></h2></div>
+  <div class="nums">
+    <div><b><i>212</i></b><span>RFIs coordinated</span><small>Across my 8 projects, including 53 I wrote and filed myself (24 A Street, 18 Bungalows, 6 Tampa, 3 Cleo, 2 other) · 242 Ferrocrete RFIs firm-wide in the same period</small></div>
+    <div><b><i>169</i></b><span>Submittals coordinated</span><small>Rebar and PT shops, mix designs, CMU and finish plans across my 8 projects, including 35 I prepared and filed myself · 192 firm-wide in the same period</small></div>
+    <div><b><i>9</i></b><span>Change orders built or priced</span><small>$112,086 priced: COR A-07 dropped footings, Bungalows ($103,695) · COR 07 podium rebar, Melodia ($4,020, approved) · COR 25 lobby pour-back, Stella ($2,772) · COR-06 Xypex block-out, A Street ($1,599, approved as SCO-005). Also the Neptune concrete-to-CMU add/credit, Tampa Xypex admixture, COR-005 double-lift column, an August T&amp;M COR and the Normandie COR 02 permit-set backup, plus the firm's COR template</small></div>
+    <div><b><i>$49,631</i></b><span>Duplicate supplier bills</span><small>Caught and removed from job cost across 8 jobs by the invoice-to-data pipeline</small></div>
+    <div><b><i>133,167</i> CY</b><span>Supplier tickets checked</span><small>13,652 ready-mix tickets digitized and matched to jobs across 19 projects · 722 CY of billing errors flagged (350 CY Tampa, 372 CY Del Amo)</small></div>
+    <div><b><i>17</i></b><span>Drawing-revision overlays</span><small>Architectural, structural and plumbing set comparisons across 6 projects: 531 College 50%, 80%, 95% and 98% CD (6), Normandie permit set (3), A Street Bulletin 2 (4), Seagaze rev 9–9.1 (2), Cleo CC1, Bungalows B1 vs B2</small></div>
+    <div><b>22</b><span>Takeoff sets on file</span><small>Concrete, CMU, pool, tower crane, sand and gravel and CO takeoffs across 9 jobs, incl. my column and converted-wall takeoffs</small></div>
+    <div><b>14</b><span>Contracts and subcontracts</span><small>GC subcontracts, exhibits and scopes read for Tampa, Pacific BMW, Maison Housing, Normandie, Neptune, 531 College and Whittier Packing House</small></div>
+    <div><b>12</b><span>Active jobs supported</span><small>Bungalows, A Street, Beacon, Neptune, Normandie, Tampa, 531 College, Cleo, Melodia, Seagaze, Pacific BMW, Maison Housing</small></div>
+    <div><b>16</b><span>RFI-driven change orders</span><small>Change orders on my jobs that came out of an RFI, from pile cap shifts to added Xypex and dropped footings</small></div>
+  </div>
+</div></section>
+
+<nav><div class="scroll" id="tabs"></div></nav>
+<main id="sheets"></main>
+
+<section class="band" id="systems"><div class="wrap">
+  <div class="tb"><h2>Systems <em>I built.</em></h2></div>
+  <div class="sys" id="sys"></div>
+  <p style="margin-top:22px;line-height:1.7"><b>Master schedules I built and updated:</b> 2935 A Street, Tampa &amp; Sherman, Modera Neptune, The Cleo and Melodia, with phase-level Gantt charts, pour progress curves and variance against baseline. <a href="https://claude.ai/artifact/DoDBVmfCtpZ6k5WQTmdCFq" target="_blank" rel="noopener">Open the schedule dashboard →</a></p>
+  <h3 style="margin-top:28px">Skills &amp; software</h3>
+  <div class="role">
+    <div><h3>Design &amp; drawing review</h3><p>AutoCAD · Revit / BIM (IFC models) · Bluebeam Revu (markups, overlays, takeoffs) · PlanSwift</p></div>
+    <div><h3>Project management &amp; document control</h3><p>Procore · Autodesk Forma / Autodesk Build (RFIs, submittals, sheets) · Buildertrend (daily logs, change orders, bills) · Google Drive · Microsoft Office</p></div>
+    <div><h3>Scheduling &amp; project controls</h3><p>Primavera P6 (CPM, EVM, schedule health checks) · Outbuild · Cost &amp; schedule analysis</p></div>
+    <div><h3>Estimating &amp; cost</h3><p>Cost estimation · Quantity takeoff (Bluebeam, PlanSwift, Beam AI) · Buildertrend job costing · RFP preparation</p></div>
+    <div><h3>Data, reporting &amp; AI</h3><p>Reporting automation (weekly Buildertrend-synced cost report) · Power BI · Excel / Google Sheets · Python (OCR and data pipelines) · Claude (AI agents and skills)</p></div>
+    <div><h3>Management</h3><p>QA/QC management · Contract management · RFI, submittal and change-order workflows</p></div>
+    <div><h3>Certifications</h3><p>OSHA 30 · LEED Green Associate · CMAA-CMIT · Procore · Bluebeam</p></div>
+    <div><h3>Memberships</h3><p>SoCal CMAA · ASCE · AACE · USC ITE</p></div>
+  </div>
+</div></section>
+
+<footer><span>Thoughtfully designed. Intentionally built.</span><a href="#">Back to top ↑</a></footer>
+<dialog id="lb"><button id="lbx" aria-label="Close">✕</button><img id="lbi" alt=""><p id="lbc"></p></dialog>
+
+<script>
+{
+const P=[
+{id:'bungalows',cat:'MULTIFAMILY WRAP / TORRANCE',no:'P-01',name:'Bungalows of Torrance',type:'525-unit, 6-story wrap around an 8-level PT parking garage',
+ hero:['bungalows-rendering.jpg','Exterior rendering along Vermont Avenue','JPI'],
+ data:[["Software", "Bluebeam Revu · Autodesk Forma (RFIs) · Buildertrend (daily logs, change orders, job costing) · Excel CY tracker and dashboard · Google Drive · Claude · Revit"],['Project','525-unit, 6-story wrap on a 4.9-acre site half a mile from Harbor-UCLA Medical Center; sky amenity deck, resort pool, clubhouse, fitness center'],['Location','22107 S Vermont Ave, Torrance, CA'],['Contractor','JPI Construction (GC)'],['Design','AC Martin (architect) · Offset Engineering (SEOR)'],['Square footage','Garage: 272,756 SF of deck, 106,717 SF of walls · Building: 91,471 SF podium deck, 89,131 SF SOG, 32,520 SF of walls'],['Concrete','25,814 CY takeoff (15,334 garage · 10,480 building) · 705 stalls']],
+ work:["Budget gap: The building budget was missing the entire roof slab. Found it by checking the bid takeoff against 89 approved submittal drawings, adding 1,462 CY / 34,836 SF of concrete before it became a cost overrun.", "Quantity control: Prepared a 25,814 CY takeoff for both buildings and tracked it against actual pours; the garage finished within 1.4% of the takeoff.", "Design change: Footings were lowered after design responses. Priced the added excavation, concrete, formwork and rebar into a $103,695 change order with takeoff and marked-up drawings as backup.", "Coordination: Filed 18 of the project's 22 RFIs, getting answers on column, elevator pit, seismic joint and rooftop pool conflicts before crews reached those areas.", "Billing errors: Audited 18 pump invoices (8,902 CY) and flagged a 600 CY billing minimum and a unit rate that nearly doubled over the job.", "Field tracking: Built the garage pour sequence and a budget-vs-actual concrete dashboard by sector; kept daily reports and material tracking for both buildings and supported Revit modeling."],
+ 
+ views:[['bungalows-3d-wall-section.jpg','3D wall section through the balcony stack, Level 1 to roof','Architect AC Martin, attachment to RFI-54']],
+ rfis:[
+  ['RFI-52.1','Seismic joint at Building C','Field walls did not leave the 7 in. clear joint on S2-02C-R; walls had to shift 4½ in.','Formalized the SEOR and superintendent\'s verbal approval in writing.','Architect confirmed the wall was adjusted in the field. Closed 9/4/26 (JPI RFI-218).',1],
+  ['RFI-55','Pool and spa vault clear height','Clear height under the Level 8 pool and spa vault measured 7\'-11" and 7\'-4".','Asked for direction and to pour the pool slab ahead of the Level 8 slab.','Closed 10/8/26 with the design team response (JPI RFI-220).',1],
+  ['RFI-60','Grid 9.6 to 10 dimension at anchor bolts','S2-08 and the approved anchor bolt submittal show 11\'-5"; A108G shows 11\'-6".','Asked which governs before setting the embeds.','SEOR: grid-to-grid per architectural; architect issued final direction. Closed 11/12/26 (JPI RFI-242).',1],
+  ['RFI-54','Balcony slab step, Level 2','A102-D, 1/A366 and 5/A811 show a step at the cantilever with no dimensions or reinforcing.','Proposed eliminating the step to keep reinforcing continuous, holding the 1.8% slope.','In review when exported.',0]]},
+{id:'astreet',cat:'MID-RISE / SAN DIEGO',no:'P-02',name:'A Street Flats',type:'Mid-rise over P1 parking with an SDG&E utility vault',
+ hero:['astreet-rendering.jpg','Exterior rendering from A Street','AC Martin, IFC set cover sheet G000'],
+ data:[["Software", "Procore (Rockwood) · Autodesk Forma · Bluebeam Revu (markups, overlays, takeoffs) · Outbuild · Buildertrend daily logs · Excel submittal and RFI logs · Claude"],['Location','2935 A Street, San Diego, CA'],['Contractor','Rockwood Construction (GC)'],['Design','AC Martin (architect) · KPFF (SEOR)'],['Project','8-story, 180-unit building (The Lawson), 51% affordable'],['Square footage','216,000 SF'],['Project cost','$89M'],['Concrete','7,126 CY budget · 6,089 CY poured (85%)']],
+ work:["Coordination: Filed 24 of the project's 38 RFIs, resolving shear wall, beam height, post-tension cable and utility vault conflicts ahead of each pour.", "Cost and time: Three small pours each needed their own pump. Got one 6,000 psi mix approved for all three so they shared a single pump mobilization.", "Avoided delay: The utility vault question was holding up site paving. Split it into two RFIs so paving could proceed while the vault design was finished.", "Schedule: Developed the approved deck pour sequence and kept the Outbuild schedule current from daily logs and the CY tracker.", "Documentation: Filed 10 submittals and an approved waterproofing change order; wrote daily field reports, tracked materials and managed the utility inspection hold point."],
+ 
+ views:[['rfi-as-28-p7.jpg','Site: upturn beam reinforcing at Level P1 before the pour','Site photo, RFI-28']],
+ rfis:[
+  ['RFI-28','Upturn beam height, Level P1','Architectural calls 42 in. from finished floor; structural calls 42 in. from bottom of deck. Rebar was already in place.','Asked for an extension detail before the pour.','KPFF: follow 19B/S610, drill and epoxy vertical bars 4 in. into the poured beam. Closed 8/3/26.',1],
+  ['RFI-37','Retaining wall at gas alcove','A103 and 3/A703 show a wall at the bike room but none at the gas alcove where foam and topping slab go.','Asked if a wall is required, which detail applies, and the gas riser blockout.','AC Martin: 6 in. CIP wall, top at 214\'-6". Closed 10/13/26.',1],
+  ['RFI-39','One mix for three pours','Mix 6011000 (6,000 psi) was approved only for shear walls.','Requested it for SOG and P1 pour backs and the SDG&E vault deck, one 2 in. line pump.','Closed 10/23/26 (Rockwood RFI-177).',1],
+  ['RFI-41','Pull anchors in CMU walls','SDG&E VD01 requires pull anchors in 13\'-11" non-bearing CMU walls; no reinforcing detail exists.','Raised after the SEOR asked for it at structural observation.','In review when exported.',0],
+  ['RFI-29','Missing sill anchorage','17/S870 points to 20/S870 for anchorage, which has none.','Flagged the cost risk of post-installed anchors.','In review when exported.',0]]},
+{id:'beacon',cat:'MIXED-USE / SAN PEDRO',no:'P-03',name:'TCC Beacon',type:'7–8 story mixed-use over podium',
+ hero:['beacon-rendering.jpg','Exterior rendering','KFA, contract documents'],
+ data:[["Software", "Bluebeam Revu · Autodesk Forma · Outbuild · Buildertrend · Excel · Claude"],['Location','155 W 6th St / 625 S Beacon, San Pedro, CA'],['Contractor','Westport Construction (GC)'],['Developer','High Street Residential (Trammell Crow) and Haseko'],['Design','KFA (architect and SEOR)'],['Project','8-story, 281-unit podium building (Jules San Pedro) over a parking deck'],['Concrete','11,891 CY budget · 5,736 CY poured (48%)']],
+ work:["Fabrication errors: Reviewed the column shop drawings before fabrication and caught 3 errors: two extra columns, a 4 ft elevation mismatch and a column placed on a shear wall.", "Verification tool: Built a column workbook with elevations, counts and heights for every level so shop drawings could be checked quickly against the structural design.", "Planning: Developed the approved pour sequence from the foundation mat through Level 2 and kept the schedule current.", "Documentation: Filed 5 submittals and supported 40 RFIs, 30 submittals and the resulting change orders."],
+ 
+ views:[['beacon-massing-1-4.jpg','3D massing, design intent','KFA, G003'],['beacon-massing-2-5.jpg','3D massing, design intent','KFA, G004']],
+ rfis:[]},
+{id:'normandie',cat:'PODIUM / GARDENA',no:'P-04',name:'Normandie Crossing',type:'Podium apartments over a basement level · preconstruction',
+ hero:['normandie-rendering.jpg','Exterior rendering at 16911 S Normandie Ave','JPI, via Multi-Housing News'],
+ data:[["Software", "Bluebeam Revu (overlays, takeoffs) · Autodesk Forma · Excel · Google Drive · Claude"],['Location','16911 S Normandie Ave, Gardena, CA'],['Contractor','JPI Construction (GC)'],['Developer','JPI'],['Design','AO (architect) · KPFF (SEOR)'],['Project','257-unit apartment community over a basement level'],['Project cost','$125M'],['Square footage','23,968 SF of basement shotcrete walls (my takeoff)'],['Concrete','10,606 CY takeoff (9,852 structure · 754 basement shotcrete walls)']],
+ work:["Budget: Prepared a 10,606 CY takeoff from the GMP set (9,852 CY structure and 754 CY basement shotcrete walls) to set the concrete budget.", "Risk before pricing: Found conflicting slab thicknesses (18 in. vs 12 in.), foundation elevations and elevator pit dimensions between drawings and raised them before the price was locked.", "Change order support: Compared the permit and contract drawing sets to document every scope change behind the contract-to-permit change order.", "Pour planning: Planned four pours per level with CY and SF for each, supported by a 3D pour-sequence model and a shotcrete placement planner."],
+ 
+ views:[],rfis:[]},
+{id:'neptune',cat:'MIXED-USE / OCEANSIDE',no:'P-05',name:'Modera Neptune',type:'Mixed PT and conventional decks over below-grade parking',
+ hero:['neptune-rendering.jpg','Exterior rendering on North Coast Highway','Mill Creek Residential'],
+ data:[["Software", "Bluebeam Revu · Outbuild · IFC model viewer (3D structure) · Autodesk Forma · Buildertrend · Claude · Revit"],['Location','815–901 N Coast Hwy, Oceanside, CA'],['Contractor','MCRT SoCal, Mill Creek Residential (GC)'],['Owner','Mill Creek Residential'],['Design','AC Martin (architect) · VCA Structural (SEOR)'],['Project','Contemporary podium midrise: 360 one- and two-bedroom homes plus a 62-room boutique hotel on a 1.72-acre site near Ocean Harbor Beach; rooftop pool, wellness spa, fitness and coworking; first move-ins 2028'],['Concrete','20,131 CY budget · 6,199 CY poured (31%)']],
+ work:["Scope change: The design switched walls from concrete to CMU over 15 revisions. Priced the add/credit change order with a takeoff of every changed wall, then turned the process into a repeatable method for future scope changes.", "Coordination: Kept the schedule current, filed the column rebar and grout submittals and supported 27 RFIs and 40 submittals.", "Review: Checked foundation and slab elevations against the pour sequence and supported Revit modeling."],
+ method:null,views:[['neptune-3d-b.jpg','3D structural model, opposite corner','Project IFC model'],['neptune-site-excavation.jpg','Site: foundation excavation with dewatering','Site photo, COR 08'],['neptune-shoring-wall.jpg','Site: soldier-pile shoring wall','Site photo, RFI-25 folder']],rfis:[]},
+{id:'tampa',cat:'PODIUM / LOS ANGELES',no:'P-06',name:'Tampa & Sherman Apartments',type:'Podium building, 244 units and 125 stalls',
+ hero:['tampa-rendering.jpg','Exterior rendering at Tampa Ave and Sherman Way','RAAM Construction · Y&M Architects'],
+ data:[["Software", "Bluebeam Revu · Autodesk Forma · Outbuild · Buildertrend (daily logs, bills) · Excel · Claude"],['Location','7143 Tampa Ave / 19300 Sherman Way, Los Angeles, CA'],['Contractor','RAAM Construction (design-build GC) for Meta Housing'],['Design','Y&M Architects · Labib Funk + Associates (SEOR)'],['Project','244 affordable senior apartments, 125 parking stalls, 5 stories over a concrete podium'],['Square footage','161,322 SF of floor area · our scope 44,199 SF of deck and slab, 17,690 SF of walls'],['Project cost','$83.6M'],['Concrete','5,463 CY budget · 5,219 CY poured (96%)']],
+ work:["Quantity check: Reconciled invoiced concrete to the project tracker within 0.6% and found 350 CY missing from the invoice record.", "Drawing conflicts: Architectural and structural drawings disagreed on a slab drop, planter walls and which walls were concrete or CMU. Resolved them through 6 RFIs so rebar shop drawings could proceed, and filed 12 of the project's 21 submittals.", "Reinforcement: Managed the tie-down reinforcement RFI and submittal covering 17,074 lb of rebar.", "Pricing: Priced the waterproofing admixture change order with two concrete suppliers.", "Quality: Performed on-site QA/QC with documentation and kept the schedule current through structural completion."],
+ method:null,
+ views:[['tampa-shotcrete-test-panel.jpg','Site: shotcrete test panel at the footings','Quality control photo']],
+ rfis:[
+  ['RFI-07','Single drop panel at GL-G','S-102 shows a drop panel at only one column on GL-G.','Asked LFA to confirm before forming.','LFA: confirmed. Closed 7/13/26.',1],
+  ['RFI-09','SOG rebar grade','Rebar detailer asked whether SOG bars fall under "all other" in Note 1, S-001.','Forwarded to confirm Grade 60.','In review when exported.',0],
+  ['RFI-10','Board-form finish, east wall','A-101 was unclear whether the first floor east wall is board-formed.','Asked before ordering form liner.','In review when exported.',0]]},
+{id:'college',cat:'MID-RISE / LOS ANGELES',no:'P-07',name:'531 W College',type:'Mid-rise over basement, PT decks',
+ hero:['college-rendering.jpg','Exterior rendering of 501 Essense','Steinberg Hart, via Downtown LA'],
+ data:[["Software", "Bluebeam Revu (overlays, takeoffs) · Autodesk Forma · Excel · Google Drive · Claude"],['Location','531 W College St, Los Angeles, CA'],['Contractor','Westport Construction (GC)'],['Project','501 Essense: 455 apartments (91 affordable) with 9,000 SF of retail'],['Design','Steinberg Hart (architect)'],['Our takeoff','Interior walls B1–L2: 143 walls, 24,974 SF, 1,301.9 CY']],
+ work:["Takeoff accuracy: Took off 143 interior walls (24,974 SF, 1,302 CY); checking against the Revit model caught a drawing printed at the wrong scale and a wall left out of the takeoff.", "Sloped mat: Calculated wall heights on the 1% sloped basement mat and matched the model within 0.05 ft.", "Design changes: Tracked changes across three drawing-set updates, including a slab lowered 1 ft, and recalculated every affected wall height.", "Planning: Color-coded every slab area on four levels by thickness and elevation, developed the deck pour sequence and supported 41 RFIs and 24 submittals."],
+ 
+ views:[],rfis:[]},
+{id:"cleo",cat:"PODIUM / SAN DIEGO",no:"P-08",name:"The Cleo",type:"90 apartments, 6 stories over a basement garage",hero:["cleo-rendering.jpg", "Exterior rendering on Linda Vista Road", "Architectural set, cover sheet"],data:[["Software", "Bluebeam Revu (overlays) · Outbuild · Buildertrend · Excel · Claude"],["Project", "90 apartments (8 affordable), 6 stories, Type IA and IIIA, over a basement garage"], ["Location", "6625 Linda Vista Rd, San Diego, CA"], ["Contractor", "EKIM Builders (GC)"], ["Square footage", "21,298 SF site"], ["Concrete", "3,398 CY budget · 2,427 CY poured (71%)"]],work:["Filed 3 RFIs and 2 submittals and resubmitted the podium concrete mix after review.", "Pulled survey control from the civil drawings for layout and wrote pour logs for 11 columns.", "Kept the schedule current and checked finishing and pump invoices against actual pours."],method:null,views:[],rfis:[]},
+{id:"melodia",cat:"PODIUM / ONTARIO",no:"P-09",name:"Melodia",type:"83 apartments over a one-level podium",hero:["melodia-rendering.jpg", "Exterior rendering", "Architectural set, cover sheet"],data:[["Software", "Buildertrend (bills, daily logs, job costing) · Excel productivity workbook · Bluebeam Revu"],["Project", "The Melodia: 83 apartments over a concrete podium with 120 parking stalls"], ["Location", "1133 N Corona Ave / E 4th St, Ontario, CA"], ["Contractor", "Texton Construction (GC)"], ["Owner", "Ambitus-Ontario 1 LP"], ["Design", "JWDA-MS Architects"], ["Square footage", "52,055 SF of deck · 15,413 SF of walls"], ["Concrete", "4,903 CY · built 03/18/26 to 08/26/26"]],work:["Priced added podium reinforcement into a $4,020 change order, approved by the general contractor.", "Matched every pump and finishing invoice to its level and pour.", "Added the project to the company productivity benchmark at 3.65 SF of deck per labor hour."],method:null,views:[],rfis:[]},
+{id:"walnut",cat:"PODIUM / ROSEMEAD",no:"P-10",name:"Walnut",type:"Mixed-use building for the Taiwan Center with a 104-stall garage",hero:["walnut-rendering.jpg", "Exterior rendering at Garvey and Walnut Grove", "SLA Architects, via LA YIMBY"],data:[["Software", "Buildertrend (bills, daily logs, job costing) · Excel productivity workbook · Bluebeam Revu"],["Project", "Four-story mixed-use building with ground-floor commercial space over a semi-subterranean garage"], ["Location", "3001 Walnut Grove Ave, Rosemead, CA"], ["Contractor", "Figure 8 Group (GC)"], ["Owner", "Taiwan Center Foundation"], ["Design", "SLA Architects"], ["Square footage", "77,339 SF of deck · 81,622 SF of walls · 1.06-acre site"], ["Concrete", "5,922 CY · built 12/11/25 to 09/22/26"]],work:["Flagged 5 supplier bills with no invoice behind them.", "Matched pours to levels and confirmed scope (no dwelling units, 104 stalls) so the project benchmarked correctly."],method:null,views:[],rfis:[]},
+{id:"seagaze",cat:"MID-RISE / OCEANSIDE",no:"P-11",name:"712 Seagaze",type:"8-story, 179 affordable studio apartments",hero:["seagaze-rendering.jpg", "Exterior rendering at Seagaze Dr and Nevada St", "Prime Design, via The Coast News"],data:[["Software", "Bluebeam Revu (overlays) · Outbuild · Buildertrend · Excel"],["Project", "8-story, 100% affordable building with 179 studio apartments on a 0.36-acre downtown site"], ["Location", "712 Seagaze Dr, Oceanside, CA"], ["Contractor", "Prime Built (GC)"], ["Design", "Prime Design Services (architect) · VCA Structural (SEOR)"], ["Project cost", "$90.5M"]],work:["Compared two design revisions to catch changes before pricing.", "Audited invoices, added the missing ones to the tracker and matched every pour to its level."],method:null,views:[],rfis:[]}
+];
+const SYS=[['Invoice-to-data automation','AI-assisted OCR pipeline for 1,167 ready-mix bills and 13,652 delivery tickets across four suppliers, matched to jobs and elements in a weekly Buildertrend-synced dataset (19 projects, 133,167 CY). Caught $49,631 in duplicate bills across 8 jobs and 722 CY of billing errors: 350 CY missing from the Tampa invoices, 372 CY billed to the wrong building at Del Amo and 5 Walnut bills with no invoice behind them. Replaced manual ticket entry with a weekly automated update.'],['AI billing audit','AI agents reviewed 147 pump and finishing invoices against supporting PDFs and pour logs, flagging miscoded charges, duplicate bills and a 600 CY billing minimum for accounting.'],['Productivity and cost benchmark','19 projects, 2.5M SF of deck, 580,294 labor hours; $/CY, $/SF and SF per hour by building type.'],['AI agent system for project engineering','An internal RFI builder, estimator and scheduler, backed by nine reusable skills for RFI drafting and QA, response processing, wall-height takeoffs, change-order backup, slab-elevation coding, masonry shop review and Outbuild scheduling. Shared with colleagues across the office.'],['Scheduling and planning tools','23 Outbuild schedules consolidated to derive real production rates; interactive 3D pour-sequence model and shotcrete planner with shot sizing and truck-capacity scenarios.'],['Concrete volume tracker','Budget, theoretical and actual CY per pour for 7 active jobs, mixes split from ready-mix tickets.']];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fig=([f,cap,src],cls='')=>`<figure><button class="shot ${cls}" data-src="img/${f}" data-cap="${esc(cap)}"><img loading="lazy" src="img/${f}" alt="${esc(cap)}"></button></figure>`;
+document.getElementById('index').innerHTML=P.map(p=>`<a href="#${p.id}"><span class="no">${p.no.replace('P-','')}</span><b>${esc(p.name)}</b><i>${esc(p.cat)} ↗</i></a>`).join('')+`<a href="#systems"><span class="no">${String(P.length+1).padStart(2,"0")}</span><b>Systems I built</b><i>DATA / AI ↗</i></a>`;
+document.getElementById('mosaic').innerHTML=P.filter(p=>p.hero).map(p=>`<a href="#${p.id}"><img src="img/${p.hero[0]}" alt="${esc(p.name)}"><span>${esc(p.name)}</span></a>`).join('');
+document.getElementById('tabs').innerHTML=P.map(p=>`<a href="#${p.id}">${esc(p.name)}</a>`).join('')+'<a href="#systems">Systems</a>';
+document.getElementById('sheets').innerHTML=P.map(p=>`
+<section class="band" id="${p.id}"><div class="wrap sheet">
+ <div class="tb" style="margin-top:14px"><h2>${esc(p.name.split(' ').slice(0,-1).join(' '))} <em>${esc(p.name.split(' ').slice(-1)[0])}.</em></h2><span class="no">${esc(p.type)}</span></div>
+ <div class="hero${p.hero?'':' nohero'}">${p.hero?fig(p.hero,'fit'):''}
+  <div><dl class="data">${p.data.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></div></div>
+ <div class="part"><h3>Work performed</h3><ul class="work">${p.work.map(w=>`<li>${esc(w)}</li>`).join('')}</ul></div>
+ ${p.method?`<div class="part"><h3>Method · pour sequence</h3><p class="mtext">${esc(p.method.text)}</p></div>`:''}
+ 
+</div></section>`).join('');
+document.getElementById('sys').innerHTML=SYS.map(([t,d])=>`<div><b>${esc(t)}</b><p>${esc(d)}</p></div>`).join('');
+const lb=document.getElementById('lb'),lbi=document.getElementById('lbi'),lbc=document.getElementById('lbc');
+document.addEventListener('click',e=>{const b=e.target.closest('.shot');if(!b)return;lbi.src=b.dataset.src;lbi.alt=b.dataset.cap;lbc.textContent=b.dataset.cap;try{lb.showModal()}catch(_){}});
+document.getElementById('lbx').addEventListener('click',()=>lb.close());
+lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
+}
+</script>
+</body>
+</html>
