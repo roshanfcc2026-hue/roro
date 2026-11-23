@@ -298,7 +298,7 @@ function ferroDash(){
 
 <main class="w">
   <div id="v-home"><div id="home-body"></div>
-    <footer class="contact" id="site-footer"><span>Roshan Raj Kantharaja · Los Angeles · rajroshank1998@gmail.com</span><span><a href="https://www.linkedin.com/in/roshan-raj-k" target="_blank" rel="noopener">LinkedIn ↗</a> · <a href="https://roshanfcc2026-hue.github.io/roro/" target="_blank" rel="noopener">Roshan Raj Portfolio ↗</a></span></footer>
+    <footer class="contact" id="site-footer"><span>Roshan Raj Kantharaja · Los Angeles · roshanrajkantharaja@gmail.com</span><span><a href="https://www.linkedin.com/in/roshan-raj-k" target="_blank" rel="noopener">LinkedIn ↗</a> · <a href="https://roshanfcc2026-hue.github.io/roro/" target="_blank" rel="noopener">Roshan Raj Portfolio ↗</a></span></footer>
   </div>
   <div id="v-project" hidden></div>
 </main>
@@ -750,7 +750,7 @@ function page(p){
 }
 
 function contactPage(){
-  const em='rajroshank1998@gmail.com', li='https://www.linkedin.com/in/roshan-raj-k', site='https://roshanfcc2026-hue.github.io/roro/';
+  const em='roshanrajkantharaja@gmail.com', li='https://www.linkedin.com/in/roshan-raj-k', site='https://roshanfcc2026-hue.github.io/roro/';
   return `<nav class="crumb" aria-label="Breadcrumb"><a href="#home">Projects</a><span>/</span><span>Contact</span></nav>
   <section class="ct" aria-label="Contact">
     <span class="me-tag" style="color:#2fd39a;border-color:#2fd39a">Contact</span>
@@ -779,7 +779,7 @@ function route(){
   if(was) window.scrollTo(0,0);
 }
 document.getElementById('v-project').addEventListener('click', e => {
-  const cp = e.target.closest('#ct-copy'); if(cp){ const done=()=>{cp.textContent='Copied ✓';setTimeout(()=>cp.textContent='Copy email',1800)}; try{ navigator.clipboard.writeText('rajroshank1998@gmail.com').then(done,()=>{cp.textContent='rajroshank1998@gmail.com'}); }catch(_){ cp.textContent='rajroshank1998@gmail.com'; } return; }
+  const cp = e.target.closest('#ct-copy'); if(cp){ const done=()=>{cp.textContent='Copied ✓';setTimeout(()=>cp.textContent='Copy email',1800)}; try{ navigator.clipboard.writeText('roshanrajkantharaja@gmail.com').then(done,()=>{cp.textContent='roshanrajkantharaja@gmail.com'}); }catch(_){ cp.textContent='roshanrajkantharaja@gmail.com'; } return; }
   const so = e.target.closest('[data-fsort]'), jb = e.target.closest('[data-fjob]');
   if(!so && !jb) return;
   if(so) FSORT = so.dataset.fsort; if(jb){ FOPEN = +jb.dataset.fjob; }
