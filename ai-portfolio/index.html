@@ -104,7 +104,7 @@ a.ct-card:hover{transform:translateY(-2px)}
 .ct-ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:rgba(47,211,154,.12);color:#2fd39a}
 .ct-ic svg{width:26px;height:26px}
 .ct-lab{font:600 13px var(--fb);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
-.ct-val{font:700 clamp(19px,2.6vw,26px)/1.2 var(--ft);overflow-wrap:anywhere;color:var(--ink)}
+.ct-val{font:700 clamp(18px,2.2vw,22px)/1.2 var(--ft);overflow-wrap:anywhere;color:var(--ink)}
 .ct-acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
 .ct-big{grid-column:1/-1}
 .ct-big .ct-val{font-size:clamp(22px,4vw,40px)}
@@ -756,14 +756,16 @@ function contactPage(){
   <section class="ct" aria-label="Contact">
     <span class="me-tag" style="color:#2fd39a;border-color:#2fd39a">Contact</span>
     <h1>Let’s talk.</h1>
-    <p class="lead">Open to project engineering and AI-in-construction roles. Email is the fastest way to reach me.</p>
+    <p class="lead">Open to project engineering and AI-in-construction roles. Email or call, whichever is easier.</p>
     <div class="ct-grid">
       <div class="ct-card ct-big"><div class="ct-ic">${IC.mail}</div><span class="ct-lab">Email</span>
         <a class="ct-val" href="mailto:${em}" style="text-decoration:none">${em}</a>
         <div class="ct-acts"><a class="btn pri" href="mailto:${em}">Send an email ↗</a><button type="button" class="btn" id="ct-copy">Copy email</button></div></div>
+      <a class="ct-card" href="tel:+19797213727"><div class="ct-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div><span class="ct-lab">Phone</span>
+        <span class="ct-val">+1 (979) 721-3727</span><span class="ct-acts"><span class="btn pri">Call ↗</span></span></a>
       <a class="ct-card" href="${li}" target="_blank" rel="noopener"><div class="ct-ic">${IC.li}</div><span class="ct-lab">LinkedIn</span>
         <span class="ct-val">linkedin.com/in/roshan-raj-k</span><span class="ct-acts"><span class="btn pri">Open LinkedIn ↗</span></span></a>
-      <a class="ct-card" href="${site}" target="_blank" rel="noopener"><div class="ct-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div><span class="ct-lab">Portfolio</span>
+      <a class="ct-card ct-big" href="${site}" target="_blank" rel="noopener"><div class="ct-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div><span class="ct-lab">Portfolio</span>
         <span class="ct-val">Roshan Raj Portfolio</span><span class="ct-acts"><span class="btn pri">Open portfolio ↗</span></span></a>
     </div>
   </section>`;
